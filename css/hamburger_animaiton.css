@@ -1,0 +1,380 @@
+/* COMMON */
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 1240px;
+  height: 200px;
+  flex-wrap: wrap;
+}
+#wrap > div {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-direction: column;
+  width: 240px; height: 150px;
+  margin: 0 auto;
+}
+
+input[type="checkbox" i]{
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: auto;
+  padding: initial;
+  border: initial;
+  overflow: hidden;
+}
+label{
+  display: flex; justify-content: center; align-items: center;
+  width: 200px; height: 100px;
+  cursor: default;
+}
+p {
+  display: flex; justify-content: center; align-items: center;
+  width: 200px; height: 50px;
+  font-weight: 700;
+
+  text-align: center;
+}
+.center {
+  margin: auto 0;
+}
+
+/*!
+ * showroom
+ * input[check] animation
+ * css - hamburger menu-1
+ * 기본(basic)
+ */
+ #menu-1 {
+	display: none;
+}
+
+.menu-1 .menu {
+  transition: all 0.27s;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.menu-1 .menu_part {
+  width: 21px; 
+  height: 4px; 
+  position: absolute;
+  background: #313d44; 
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 1px;
+  transition: all 0.27s cubic-bezier(0.7, 0.1, 0.1, 1.7);
+  top: calc(50% - ((2.5px)) + -1px);
+}
+
+.menu-1 .menu_part:nth-of-type(1) {
+	top: calc(50% - ((2.5px)) + -5px);
+	width: 21px
+}
+
+
+.menu-1 .menu_part:nth-of-type(2) {
+	top: calc(50% - ((2.5px)) + 2px);
+	width: 21px
+}
+
+
+		
+input#menu-1:checked + label .menu {
+transform:scale(1.1400000000000001) rotate(0deg); 
+}
+
+input#menu-1:checked + label .menu .menu_part:nth-of-type(1) {
+transform: rotate(45deg);
+top: calc(50% - (1px))!important;
+width: 21px !important;
+}
+
+input#menu-1:checked + label .menu .menu_part:nth-of-type(2) {
+transform: rotate(-45deg);
+top: calc(50% - (1px))!important;
+width: 21px !important;
+}
+
+
+/*!
+ * showroom
+ * input[check] animation
+ * 회전
+ * css - hamburger menu-2
+ */
+
+ #menu-2 {
+	display: none;
+}
+
+.menu-2 .menu {
+  transition: all 0.14s;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.menu-2 .menu_part {
+  width: 24px; 
+  height: 4px; 
+  position: absolute;
+  background: #313d44; 
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 1px;
+  transition: all 0.5s cubic-bezier(0.8, 0.1, 0.1, 1.2);
+  width:24;top: calc(50% - ((5px)) + -2px);
+}
+
+.menu-2 .menu_part:nth-of-type(1) {
+	top: calc(50% - ((5px)) + -2px);
+	width: 24px
+}
+
+
+.menu-2 .menu_part:nth-of-type(2) {
+	top: calc(50% - ((5px)) + 4px);
+	width: 24px
+}
+
+
+		
+input#menu-2:checked + label .menu {
+  transition: all 0.5s ease;
+  transform:scale(1.08) rotate(180deg); 
+}
+
+input#menu-2:checked + label .menu .menu_part:nth-of-type(1) {
+  transition: all 0.5s ease;
+  transform: rotate(45deg);
+  top: calc(50% - (2px))!important;
+  width: 24px !important;
+}
+
+input#menu-2:checked + label .menu .menu_part:nth-of-type(2) {
+  transition: all 0.5s ease;
+  transform: rotate(-45deg);
+  top: calc(50% - (2px))!important;
+  width: 24px !important;
+}
+
+
+/*!
+ * showroom
+ * hover후 기본(basic)
+ * css - hamburger menu-3
+ */
+ #menu-3 {
+	display: none;
+}
+
+.menu-3 .menu {
+  transition: all 0.27s;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.menu-3 .menu_part {
+  width: 21px; 
+  height: 4px; 
+  position: absolute;
+  background: #313d44; 
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 1px;
+  transition: all 0.27s cubic-bezier(0.7, 0.1, 0.1, 1.7);
+  top: calc(50% - ((2.5px)) + -1px);
+}
+
+.menu-3 .menu_part:nth-of-type(1) {
+	top: calc(50% - ((2.5px)) + -5px);
+	width: 21px
+}
+
+
+.menu-3 .menu_part:nth-of-type(2) {
+	top: calc(50% - ((2.5px)) + 2px);
+	width: 21px
+}
+
+
+		
+input#menu-3:checked + label .menu {
+transform:scale(1.1400000000000001) rotate(0deg); 
+}
+
+input#menu-3:checked + label .menu .menu_part:nth-of-type(1) {
+transform: rotate(45deg);
+top: calc(50% - (1px))!important;
+width: 21px !important;
+}
+
+input#menu-3:checked + label .menu .menu_part:nth-of-type(2) {
+transform: rotate(-45deg);
+top: calc(50% - (1px))!important;
+width: 21px !important;
+}
+
+.menu-3 .menu:hover .menu_part:nth-child(1) {transition:all 0.2s linear; transform: translateY(-2px);} 
+.menu-3 .menu:hover .menu_part:nth-child(2) {transition:all 0.2s linear; transform: translateY(2px);} 
+
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-4
+ */
+
+ #menu-4 {
+	display: none;
+}
+
+.menu-4 .menu {
+  transition: all 0.14s;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.menu-4 .menu_part {
+  width: 24px; 
+  height: 4px; 
+  position: absolute;
+  background: #313d44; 
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 1px;
+  transition: all 0.14s cubic-bezier(0.8, 0.1, 0.1, 1.2);
+  width:24;top: calc(50% - ((5px)) + -2px);
+}
+
+.menu-4 .menu_part:nth-of-type(1) {
+	top: calc(50% - ((5px)) + -2px);
+	width: 24px
+}
+
+
+.menu-4 .menu_part:nth-of-type(2) {
+	top: calc(50% - ((5px)) + 4px);
+	width: 24px
+}
+
+		
+input#menu-4:checked + label .menu {
+transform:scale(1.08) rotate(180deg); 
+}
+
+input#menu-4:checked + label .menu .menu_part:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: calc(50% - (2px))!important;
+  width: 24px !important;
+}
+
+input#menu-4:checked + label .menu .menu_part:nth-of-type(2) {
+  transform: rotate(-45deg);
+  top: calc(50% - (2px))!important;
+  width: 24px !important;
+}
+
+.menu-4 .menu:hover .menu_part:nth-child(1) {transition:all 0.2s linear; transform: translateY(-2px);} 
+.menu-4 .menu:hover .menu_part:nth-child(2) {transition:all 0.2s linear; transform: translateY(2px);} 
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-5
+ */
+
+ #menu-5 {
+	display: none;
+}
+
+.menu-5 .menu {
+  width: 35px;
+  height: 30px;
+  margin: 30px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.menu-5 .menu .menu_part {
+  background-color: #000;
+  position: absolute;
+  border-radius: 2px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  width:100%;
+  height: 4px;
+  transition-duration: 500ms
+}
+.menu-5 .menu_part:nth-of-type(1) {
+	top:0px;
+  left: 0px;
+}
+.menu-5 .menu_part:nth-of-type(2) {
+	top:13px;
+  left: 0px;
+  opacity:1;
+}
+.menu-5 .menu_part:nth-of-type(3) {
+  bottom:0px;
+  left: 0px;
+}
+
+.menu-5 .menu:not(.open):hover .menu_part:nth-child(1){
+  transform: rotate(-3deg) scaleY(1.1);
+}
+
+.menu-5 .menu:not(.open):hover .menu_part:nth-child(2){
+  transform: rotate(3deg) scaleY(1.1);
+}
+
+.menu-5 .menu:not(.open):hover .menu_part:nth-child(3){
+  transform: rotate(-4deg) scaleY(1.1);
+}
+
+.menu-5 .menu.open .menu_part:nth-child(1){
+  transform: rotate(45deg);
+  top: 13px;
+}
+
+.menu-5 .menu.open .menu_part:nth-child(2){
+  opacity: 0;
+}
+
+.menu-5 .menu.open .menu_part:nth-child(3){
+  transform: rotate(-45deg);
+  top: 13px;
+}
+
+

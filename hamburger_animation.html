@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/hamburger_animaiton.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- MENU-1 -->
+      <div>
+        <input id="menu-1" type="checkbox" />
+        <label for="menu-1" class="menu-1">
+          <div class="menu center">
+            <div class="menu_part"></div>
+            <div class="menu_part"></div>
+          </div>
+        </label>
+        <p>click : 기본(basic)</p>
+      </div>
+
+      <!-- MENU-2 -->
+      <div>
+        <input id="menu-2" type="checkbox" />
+        <label for="menu-2" class="menu-2">
+          <div class="menu center">
+            <div class="menu_part"></div>
+            <div class="menu_part"></div>
+          </div>
+        </label>
+        <p>click : 회전(45도)</p>
+      </div>
+
+      <!-- MENU-3 -->
+
+      <div>
+        <input id="menu-3" type="checkbox" />
+        <label for="menu-3" class="menu-3">
+          <div class="menu center">
+            <div class="menu_part"></div>
+            <div class="menu_part"></div>
+          </div>
+        </label>
+        <p>hover : 위아래 벌어짐 <br /> click : 기본(basic)</p>
+      </div>
+
+      <!-- MENU-4 -->
+
+      <div>
+        <input id="menu-4" type="checkbox" />
+        <label for="menu-4" class="menu-4">
+          <div class="menu center">
+            <div class="menu_part"></div>
+            <div class="menu_part"></div>
+          </div>
+        </label>
+        <p>hover : 위아래 벌어짐 <br /> click : 회전(45도)</p>
+      </div>
+
+      <!-- MENU-5 -->
+
+      <div>
+        <input id="menu-5" type="checkbox" />
+        <label for="menu-5" class="menu-5">
+          <div class="menu center">
+            <div class="menu_part"></div>
+            <div class="menu_part"></div>
+            <div class="menu_part"></div>
+          </div>
+        </label>
+        <p>click : 2번쨰 줄 사라지고 x</p>
+      </div>
+
+     
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+  </body>
+
+  <script>
+    const menu = document.querySelectorAll('.menu-5 .menu');
+    menu.forEach (icon => {  
+      icon.addEventListener('click', (event) => {
+      icon.classList.toggle("open");
+    });
+});
+  </script>
+</html>
