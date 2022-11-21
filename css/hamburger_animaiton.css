@@ -67,15 +67,15 @@ p {
 .menu-1 .menu {
   transition: all 0.27s;
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   cursor: pointer;
 }
 
 .menu-1 .menu_part {
-  width: 21px; 
-  height: 4px; 
+  width: 30px; 
+  height: 2px; 
   position: absolute;
   background: #313d44; 
   right: 0;
@@ -88,13 +88,13 @@ p {
 
 .menu-1 .menu_part:nth-of-type(1) {
 	top: calc(50% - ((2.5px)) + -5px);
-	width: 21px
+	width: 30px
 }
 
 
 .menu-1 .menu_part:nth-of-type(2) {
 	top: calc(50% - ((2.5px)) + 2px);
-	width: 21px
+	width: 30px
 }
 
 
@@ -106,13 +106,13 @@ transform:scale(1.1400000000000001) rotate(0deg);
 input#menu-1:checked + label .menu .menu_part:nth-of-type(1) {
 transform: rotate(45deg);
 top: calc(50% - (1px))!important;
-width: 21px !important;
+width: 30px !important;
 }
 
 input#menu-1:checked + label .menu .menu_part:nth-of-type(2) {
 transform: rotate(-45deg);
 top: calc(50% - (1px))!important;
-width: 21px !important;
+width: 30px !important;
 }
 
 
@@ -130,15 +130,15 @@ width: 21px !important;
 .menu-2 .menu {
   transition: all 0.14s;
   position: relative;
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   cursor: pointer;
 }
 
 .menu-2 .menu_part {
-  width: 24px; 
-  height: 4px; 
+  width: 30px; 
+  height: 2px; 
   position: absolute;
   background: #313d44; 
   right: 0;
@@ -151,13 +151,13 @@ width: 21px !important;
 
 .menu-2 .menu_part:nth-of-type(1) {
 	top: calc(50% - ((5px)) + -2px);
-	width: 24px
+	width: 30px
 }
 
 
 .menu-2 .menu_part:nth-of-type(2) {
 	top: calc(50% - ((5px)) + 4px);
-	width: 24px
+	width: 30px
 }
 
 
@@ -171,14 +171,14 @@ input#menu-2:checked + label .menu .menu_part:nth-of-type(1) {
   transition: all 0.5s ease;
   transform: rotate(45deg);
   top: calc(50% - (2px))!important;
-  width: 24px !important;
+  width: 30px !important;
 }
 
 input#menu-2:checked + label .menu .menu_part:nth-of-type(2) {
   transition: all 0.5s ease;
   transform: rotate(-45deg);
   top: calc(50% - (2px))!important;
-  width: 24px !important;
+  width: 30px !important;
 }
 
 
@@ -194,15 +194,15 @@ input#menu-2:checked + label .menu .menu_part:nth-of-type(2) {
 .menu-3 .menu {
   transition: all 0.27s;
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   cursor: pointer;
 }
 
 .menu-3 .menu_part {
-  width: 21px; 
-  height: 4px; 
+  width: 30px; 
+  height: 2px; 
   position: absolute;
   background: #313d44; 
   right: 0;
@@ -215,13 +215,13 @@ input#menu-2:checked + label .menu .menu_part:nth-of-type(2) {
 
 .menu-3 .menu_part:nth-of-type(1) {
 	top: calc(50% - ((2.5px)) + -5px);
-	width: 21px
+	width: 30px
 }
 
 
 .menu-3 .menu_part:nth-of-type(2) {
 	top: calc(50% - ((2.5px)) + 2px);
-	width: 21px
+	width: 30px
 }
 
 
@@ -233,13 +233,13 @@ transform:scale(1.1400000000000001) rotate(0deg);
 input#menu-3:checked + label .menu .menu_part:nth-of-type(1) {
 transform: rotate(45deg);
 top: calc(50% - (1px))!important;
-width: 21px !important;
+width: 30px !important;
 }
 
 input#menu-3:checked + label .menu .menu_part:nth-of-type(2) {
 transform: rotate(-45deg);
 top: calc(50% - (1px))!important;
-width: 21px !important;
+width: 30px !important;
 }
 
 .menu-3 .menu:hover .menu_part:nth-child(1) {transition:all 0.2s linear; transform: translateY(-2px);} 
@@ -259,15 +259,15 @@ width: 21px !important;
 .menu-4 .menu {
   transition: all 0.14s;
   position: relative;
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   cursor: pointer;
 }
 
 .menu-4 .menu_part {
-  width: 24px; 
-  height: 4px; 
+  width: 30px; 
+  height: 2px; 
   position: absolute;
   background: #313d44; 
   right: 0;
@@ -280,13 +280,13 @@ width: 21px !important;
 
 .menu-4 .menu_part:nth-of-type(1) {
 	top: calc(50% - ((5px)) + -2px);
-	width: 24px
+	width: 30px
 }
 
 
 .menu-4 .menu_part:nth-of-type(2) {
 	top: calc(50% - ((5px)) + 4px);
-	width: 24px
+	width: 30px
 }
 
 		
@@ -297,13 +297,13 @@ transform:scale(1.08) rotate(180deg);
 input#menu-4:checked + label .menu .menu_part:nth-of-type(1) {
   transform: rotate(45deg);
   top: calc(50% - (2px))!important;
-  width: 24px !important;
+  width: 30px !important;
 }
 
 input#menu-4:checked + label .menu .menu_part:nth-of-type(2) {
   transform: rotate(-45deg);
   top: calc(50% - (2px))!important;
-  width: 24px !important;
+  width: 30px !important;
 }
 
 .menu-4 .menu:hover .menu_part:nth-child(1) {transition:all 0.2s linear; transform: translateY(-2px);} 
@@ -320,12 +320,12 @@ input#menu-4:checked + label .menu .menu_part:nth-of-type(2) {
 }
 
 .menu-5 .menu {
-  width: 35px;
-  height: 30px;
-  margin: 30px;
+  width: 50px;
+  height: 50px;
   position: relative;
   cursor: pointer;
   display: inline-block;
+  margin: 0 auto;
 }
 
 .menu-5 .menu .menu_part {
@@ -333,22 +333,26 @@ input#menu-4:checked + label .menu .menu_part:nth-of-type(2) {
   position: absolute;
   border-radius: 2px;
   transition: .3s cubic-bezier(.8, .5, .2, 1.4);
-  width:100%;
-  height: 4px;
-  transition-duration: 500ms
+  width:30px;
+  height: 2px;
+  transition-duration: 500ms;
+  margin: auto;
 }
 .menu-5 .menu_part:nth-of-type(1) {
-	top:0px;
+  top: calc(50% - ((5px)) + -2px);
   left: 0px;
+  right: 0;
 }
 .menu-5 .menu_part:nth-of-type(2) {
-	top:13px;
+  top: calc(50% - ((5px)) + 4px);
   left: 0px;
   opacity:1;
+  right: 0;
 }
 .menu-5 .menu_part:nth-of-type(3) {
-  bottom:0px;
+  top: calc(50% - ((5px)) + 10px);
   left: 0px;
+  right: 0;
 }
 
 /* .menu-5 .menu:not(.open):hover .menu_part:nth-child(1){
@@ -364,8 +368,8 @@ input#menu-4:checked + label .menu .menu_part:nth-of-type(2) {
 } */
 
 .menu-5 .menu.open .menu_part:nth-child(1){
+  top: calc(50% - (2px))!important;
   transform: rotate(45deg);
-  top: 13px;
 }
 
 .menu-5 .menu.open .menu_part:nth-child(2){
@@ -374,7 +378,87 @@ input#menu-4:checked + label .menu .menu_part:nth-of-type(2) {
 
 .menu-5 .menu.open .menu_part:nth-child(3){
   transform: rotate(-45deg);
-  top: 13px;
+  top: calc(50% - (2px))!important;
 }
+
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-6
+ */
+
+ #menu-6 {
+	display: none;
+}
+
+.menu-6 .menu {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.menu-6 .menu .menu_part {
+  background-color: #000;
+  position: absolute;
+  border-radius: 2px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  width:30px;
+  height: 2px;
+  transition-duration: 500ms;
+  margin: auto;
+}
+.menu-6 .menu_part:nth-of-type(1) {
+  top: calc(50% - ((5px)) + -2px);
+  left: 0px;
+  right: 0;
+}
+.menu-6 .menu_part:nth-of-type(2) {
+  top: calc(50% - ((5px)) + 4px);
+  left: 0px;
+  opacity:1;
+  right: 0;
+}
+.menu-6 .menu_part:nth-of-type(3) {
+  top: calc(50% - ((5px)) + 10px);
+  left: 0px;
+  right: 0;
+}
+
+.menu-6:hover .menu_part:nth-of-type(1) {
+  top: calc(50% - ((5px)) + -6px);
+  left: 0px;
+  right: 0;
+}
+.menu-6:hover .menu_part:nth-of-type(2) {
+  top: calc(50% - ((5px)) + 4px);
+  left: 0px;
+  opacity:1;
+  right: 0;
+}
+.menu-6:hover .menu_part:nth-of-type(3) {
+  top: calc(50% - ((5px)) + 14px);
+  left: 0px;
+  right: 0;
+}
+
+
+.menu-6 .menu.open .menu_part:nth-child(1){
+  top: calc(50% - (2px))!important;
+  transform: rotate(45deg);
+}
+
+.menu-6 .menu.open .menu_part:nth-child(2){
+  opacity: 0;
+}
+
+.menu-6 .menu.open .menu_part:nth-child(3){
+  transform: rotate(-45deg);
+  top: calc(50% - (2px))!important;
+}
+
 
 

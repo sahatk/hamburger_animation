@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/hamburger_animaiton.css" />
+    <script defer src="./js/hamburger_animation.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -72,31 +73,24 @@
         </label>
         <p>click : 2번쨰 줄 사라지고 x</p>
       </div>
+    </div>
 
-     
-
-
-
-
-
-
-
-
-
-
-
+    <div id="wrap">
+      <!-- MENU-6 -->
+      <div>
+        <input id="menu-6" type="checkbox" />
+        <label for="menu-6" class="menu-6">
+          <div class="menu center">
+            <div class="menu_part"></div>
+            <div class="menu_part"></div>
+            <div class="menu_part"></div>
+          </div>
+        </label>
+        <p>hover : 위아래 벌어짐 <br/> click : 2번쨰 줄 사라지고 x</p>
+      </div>
     </div>
 
     
     
   </body>
-
-  <script>
-    const menu = document.querySelectorAll('.menu-5 .menu');
-    menu.forEach (icon => {  
-      icon.addEventListener('click', (event) => {
-      icon.classList.toggle("open");
-    });
-});
-  </script>
 </html>
