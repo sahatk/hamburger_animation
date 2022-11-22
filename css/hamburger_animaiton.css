@@ -12,6 +12,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding: 10px;
+  background-color: #333;
 }
 .wrap {
   position: relative;
@@ -48,7 +49,8 @@ p {
   display: flex; justify-content: center; align-items: center;
   width: 200px; height: 150px;
   font-weight: 700;
-
+  font-size: 14px;
+  color: #9e9e9e;
   text-align: center;
 }
 .center {
@@ -62,6 +64,12 @@ svg {
 
 .top {
   top: 20px;
+}
+
+.menu_part,
+.menu_part_left, 
+.menu_part_right {
+  background-color: #fff !important;
 }
 
 /*!
@@ -635,15 +643,12 @@ input#menu-9:checked + label .menu .line--2 {
 }
 
 /* checked */
-input#menu-9:checked + label .menu {
-  transform:scale(1) rotate(180deg); 
-}
 input#menu-9:checked + label .menu .menu_part:nth-of-type(1) {
   transform: rotate(405deg);
   top: calc(50% - (1px))!important;
 }
 input#menu-9:checked + label .menu .menu_part:nth-of-type(2) {
-  background: rgba(255, 255, 255, 0);
+  opacity: 0;
 }
 input#menu-9:checked + label .menu .menu_part:nth-of-type(3) {
   top: calc(50% - (1px))!important;
@@ -881,3 +886,402 @@ input#menu-11:checked + label .menu_part_bottom .menu_part_right {
   top: calc(50% + (6px))!important;
   transform: rotateZ(45deg);
 } /* //check*/
+
+/*hover*/
+.menu-11 .menu:hover .menu_part_top .menu_part_right{transition:all 0.2s ease; transform: translateY(-2px);} 
+.menu-11 .menu:hover .menu_part_top .menu_part_left{transition:all 0.2s ease; transform: translateY(-2px);}
+.menu-11 .menu:hover .menu_part_bottom .menu_part_left{transition:all 0.2s ease; transform: translateY(2px);} 
+.menu-11 .menu:hover .menu_part_bottom .menu_part_right{transition:all 0.2s ease; transform: translateY(2px);} 
+/* //hover*/
+
+
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-12
+ */ 
+
+ #menu-12 {
+  display: none;
+ } 
+ .menu-12 .menu {
+  transition: all 0.14s;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+ }
+ .menu-12 .menu .menu_part {
+  background-color: #000;
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 0px;
+  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  opacity: 1;
+ }
+
+/* 간격(gap)은 6px로 고정 */
+.menu-12 .menu_part_top .menu_part_left { /* 첫번째 줄 왼쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + -2px);
+  left: 10px;
+}
+.menu-12 .menu_part .menu_part_left { /* 두번째 줄 왼쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 4px);
+  left: 10px;
+}
+.menu-12 .menu_part_bottom .menu_part_left { /* 세번째 줄 왼쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 10px);
+  left: 10px;
+}
+.menu-12 .menu_part_top .menu_part_right { /* 첫번째 줄 오른쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + -2px);
+  right: 10px;
+}
+.menu-12 .menu_part .menu_part_right { /* 두번째 줄 오른쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 4px);
+  right: 10px;
+}
+.menu-12 .menu_part_bottom .menu_part_right { /* 세번째 줄 오른쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 10px);
+  right: 10px;
+}
+
+
+/*check*/
+input#menu-12:checked + label .menu_part_top .menu_part_left {
+  width: 18px;
+  top: calc(50% - (6px))!important;
+  transform: rotateZ(45deg);
+}
+input#menu-12:checked + label .menu_part_top .menu_part_right {
+  width: 18px;
+  top: calc(50% - (6px))!important;
+  transform: rotateZ(-45deg);  
+}
+input#menu-12:checked + label .menu_part .menu_part_left {
+  left: -50%;
+  opacity: 0;
+}
+input#menu-12:checked + label .menu_part .menu_part_right {
+  right: -50%;
+  opacity: 0;
+}
+input#menu-12:checked + label .menu_part_bottom .menu_part_left {
+  width: 18px;
+  top: calc(50% + (6px))!important;
+  transform: rotateZ(-45deg);
+}
+input#menu-12:checked + label .menu_part_bottom .menu_part_right {
+  width: 18px;
+  top: calc(50% + (6px))!important;
+  transform: rotateZ(45deg);
+} /* //check*/
+
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-13
+ */ 
+
+ #menu-13 {
+  display: none;
+ } 
+ .menu-13 .menu {
+  transition: all 0.14s;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+ }
+ .menu-13 .menu .menu_part {
+  background-color: #000;
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 0px;
+  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  opacity: 1;
+ }
+
+/* 간격(gap)은 6px로 고정 */
+.menu-13 .menu_part_top .menu_part_left { /* 첫번째 줄 왼쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + -2px);
+  left: 10px;
+}
+.menu-13 .menu_part .menu_part_left { /* 두번째 줄 왼쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 4px);
+  left: 10px;
+}
+.menu-13 .menu_part_bottom .menu_part_left { /* 세번째 줄 왼쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 10px);
+  left: 10px;
+}
+.menu-13 .menu_part_top .menu_part_right { /* 첫번째 줄 오른쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + -2px);
+  right: 10px;
+}
+.menu-13 .menu_part .menu_part_right { /* 두번째 줄 오른쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 4px);
+  right: 10px;
+}
+.menu-13 .menu_part_bottom .menu_part_right { /* 세번째 줄 오른쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 10px);
+  right: 10px;
+}
+
+
+/*check*/
+input#menu-13:checked + label .menu_part_top .menu_part_left {
+  width: 18px;
+  top: calc(50% - (6px))!important;
+  transform: rotateZ(45deg);
+}
+input#menu-13:checked + label .menu_part_top .menu_part_right {
+  width: 18px;
+  top: calc(50% - (6px))!important;
+  transform: rotateZ(-45deg);  
+}
+input#menu-13:checked + label .menu_part .menu_part_left {
+  left: -50%;
+  opacity: 0;
+}
+input#menu-13:checked + label .menu_part .menu_part_right {
+  right: -50%;
+  opacity: 0;
+}
+input#menu-13:checked + label .menu_part_bottom .menu_part_left {
+  width: 18px;
+  top: calc(50% + (6px))!important;
+  transform: rotateZ(-45deg);
+}
+input#menu-13:checked + label .menu_part_bottom .menu_part_right {
+  width: 18px;
+  top: calc(50% + (6px))!important;
+  transform: rotateZ(45deg);
+} /* //check*/
+
+/*hover*/
+.menu-13 .menu:hover .menu_part_top .menu_part_right{transition:all 0.2s ease; transform: translateY(-2px);} 
+.menu-13 .menu:hover .menu_part_top .menu_part_left{transition:all 0.2s ease; transform: translateY(-2px);}
+.menu-13 .menu:hover .menu_part_bottom .menu_part_left{transition:all 0.2s ease; transform: translateY(2px);} 
+.menu-13 .menu:hover .menu_part_bottom .menu_part_right{transition:all 0.2s ease; transform: translateY(2px);} 
+/* //hover*/
+
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-14
+ */ 
+
+ #menu-14 {
+  display: none;
+ } 
+ .menu-14 .menu {
+  transition: all 0.14s;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+ }
+ .menu-14 .menu .menu_part {
+  width: 30px; 
+  height: 2px; 
+  position: absolute;  
+  background-color: #000;
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 0px;
+  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+}
+
+/* 간격(gap)은 6px로 고정 */
+.menu-14 .menu_part:nth-of-type(1) {
+	top: calc(50% - ((2.5px)) + -2px);
+	width: 30px
+}
+.menu-14 .menu_part:nth-of-type(2) {
+	top: calc(50% - ((2.5px)) + 4px);
+	width: 30px
+}
+.menu-14 .menu_part:nth-of-type(3) {
+  top: calc(50% - ((2.5px)) + 10px);
+	width: 30px
+}
+
+/* checked */
+input#menu-14:checked + label .menu {
+}
+input#menu-14:checked + label .menu .menu_part:nth-of-type(1) {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  top: calc(50% - (1px))!important;
+}
+input#menu-14:checked + label .menu .menu_part:nth-of-type(2) {
+  opacity: 0;
+  left: -60px;
+}
+input#menu-14:checked + label .menu .menu_part:nth-of-type(3) {
+  top: calc(50% - (1px))!important;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+/* //checked */
+
+
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-15
+ */ 
+
+ #menu-15 {
+  display: none;
+ } 
+ .menu-15 .menu {
+  transition: all 0.14s;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+ }
+ .menu-15 .menu .menu_part {
+  width: 30px; 
+  height: 2px; 
+  position: absolute;  
+  background-color: #000;
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 0px;
+  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+}
+
+/* 간격(gap)은 6px로 고정 */
+.menu-15 .menu_part:nth-of-type(1) {
+	top: calc(50% - ((2.5px)) + -2px);
+	width: 30px
+}
+.menu-15 .menu_part:nth-of-type(2) {
+	top: calc(50% - ((2.5px)) + 4px);
+	width: 30px
+}
+.menu-15 .menu_part:nth-of-type(3) {
+	top: calc(50% - ((2.5px)) + 4px);
+	width: 30px
+}
+.menu-15 .menu_part:nth-of-type(4) {
+  top: calc(50% - ((2.5px)) + 10px);
+	width: 30px
+}
+
+/* checked */
+input#menu-15:checked + label .menu .menu_part:nth-of-type(1) {
+  width: 0%;
+  left: -50%;
+  opacity: 0;
+}
+input#menu-15:checked + label .menu .menu_part:nth-of-type(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input#menu-15:checked + label .menu .menu_part:nth-of-type(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+input#menu-15:checked + label .menu .menu_part:nth-of-type(4) {
+  width: 0%;
+  right: -50%;
+  opacity: 0;
+}
+/* //checked */
