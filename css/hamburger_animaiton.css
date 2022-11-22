@@ -104,11 +104,13 @@ svg {
 
 .menu-1 .menu_part:nth-of-type(1) {
 	top: calc(50% - ((2.5px)) + -5px);
-	width: 30px
+	width: 30px;
+  transition: all 0.48s ease-in-out;
 }
 .menu-1 .menu_part:nth-of-type(2) {
 	top: calc(50% - ((2.5px)) + 2px);
-	width: 30px
+	width: 30px;
+  transition: all 0.48s ease-in-out;
 }
 
 /* checked */
@@ -119,11 +121,13 @@ input#menu-1:checked + label .menu .menu_part:nth-of-type(1) {
 transform: rotate(45deg);
 top: calc(50% - (1px))!important;
 width: 30px !important;
+transition: all 0.48s ease-in-out;
 }
 input#menu-1:checked + label .menu .menu_part:nth-of-type(2) {
 transform: rotate(-45deg);
 top: calc(50% - (1px))!important;
 width: 30px !important;
+transition: all 0.48s ease-in-out;
 }/* //checked */
 
 /*!
@@ -156,11 +160,13 @@ width: 30px !important;
 }
 .menu-2 .menu_part:nth-of-type(1) {
 	top: calc(50% - ((2.5px)) + -5px);
-	width: 30px
+	width: 30px;
+  transition: all 0.48s ease-in-out;
 }
 .menu-2 .menu_part:nth-of-type(2) {
 	top: calc(50% - ((2.5px)) + 2px);
-	width: 30px
+	width: 30px;
+  transition: all 0.48s ease-in-out;
 }
 
 /*checked*/
@@ -171,11 +177,13 @@ input#menu-2:checked + label .menu .menu_part:nth-of-type(1) {
 transform: rotate(45deg);
 top: calc(50% - (1px))!important;
 width: 30px !important;
+transition: all 0.48s ease-in-out;
 }
 input#menu-2:checked + label .menu .menu_part:nth-of-type(2) {
 transform: rotate(-45deg);
 top: calc(50% - (1px))!important;
 width: 30px !important;
+transition: all 0.48s ease-in-out;
 }/* //checked*/
 
 /*hover*/
@@ -1245,19 +1253,23 @@ input#menu-14:checked + label .menu .menu_part:nth-of-type(3) {
 /* 간격(gap)은 6px로 고정 */
 .menu-15 .menu_part:nth-of-type(1) {
 	top: calc(50% - ((2.5px)) + -2px);
-	width: 30px
+	width: 30px;
+  transition: all 0.48s ease-in-out;
 }
 .menu-15 .menu_part:nth-of-type(2) {
 	top: calc(50% - ((2.5px)) + 4px);
-	width: 30px
+	width: 30px;
+  transition: all 0.48s ease-in-out;
 }
 .menu-15 .menu_part:nth-of-type(3) {
 	top: calc(50% - ((2.5px)) + 4px);
-	width: 30px
+	width: 30px;
+  transition: all 0.48s ease-in-out;
 }
 .menu-15 .menu_part:nth-of-type(4) {
   top: calc(50% - ((2.5px)) + 10px);
-	width: 30px
+	width: 30px;
+  transition: all 0.48s ease-in-out;
 }
 
 /* checked */
@@ -1283,5 +1295,66 @@ input#menu-15:checked + label .menu .menu_part:nth-of-type(4) {
   width: 0%;
   right: -50%;
   opacity: 0;
+}
+/* //checked */
+
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-16
+ */ 
+
+ #menu-16 {
+  display: none;
+ } 
+ .menu-16 .menu {
+  transition: all 0.14s;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+ }
+ .menu-16 .menu .menu_part {
+  width: 30px; 
+  height: 2px; 
+  position: absolute;  
+  background-color: #000;
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 0px;
+  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+}
+
+/* 간격(gap)은 6px로 고정 */
+.menu-16 .menu_part:nth-of-type(1) {
+	top: calc(50% - ((2.5px)) + -2px);
+	width: 30px;
+  transition: transform 0.48s ease-in-out;
+}
+.menu-16 .menu_part:nth-of-type(2) {
+	top: calc(50% - ((2.5px)) + 4px);
+	width: 30px;
+}
+.menu-16 .menu_part:nth-of-type(3) {
+  top: calc(50% - ((2.5px)) + 10px);
+	width: 30px;
+  transition: transform 0.48s ease-in-out;
+}
+
+/* checked */
+
+input#menu-16:checked + label .menu .menu_part:nth-of-type(1) {
+  top: calc(50% + 2px);
+  transform: rotate(45deg);
+}
+input#menu-16:checked + label .menu .menu_part:nth-of-type(2) {
+  opacity: 0;
+}
+input#menu-16:checked + label .menu .menu_part:nth-of-type(3) {
+  top: calc(50% + 2px);
+  transform: rotate(-45deg);
 }
 /* //checked */
