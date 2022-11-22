@@ -9,7 +9,7 @@
     <script defer src="./js/hamburger_animation.js"></script>
   </head>
   <body>
-    <div id="wrap">
+    <div class="wrap">
       <!-- MENU-1 -->
       <div>
         <input id="menu-1" type="checkbox" />
@@ -19,7 +19,7 @@
             <div class="menu_part"></div>
           </div>
         </label>
-        <p>click : 기본(basic)</p>
+        <p>line : 2개 <br/> hover : 없음 <br/>click : 기본(basic)</p>
       </div>
 
       <!-- MENU-2 -->
@@ -31,7 +31,7 @@
             <div class="menu_part"></div>
           </div>
         </label>
-        <p>click : 회전(45도)</p>
+        <p>line : 2개 <br/> hover : 없음 <br/> click : 회전(45도)</p>
       </div>
 
       <!-- MENU-3 -->
@@ -44,7 +44,7 @@
             <div class="menu_part"></div>
           </div>
         </label>
-        <p>hover : 위아래 벌어짐 <br/> click : 기본(basic)</p>
+        <p>line : 2개 <br/> hover : 위아래 벌어짐 <br/> click : 기본(basic)</p>
       </div>
 
       <!-- MENU-4 -->
@@ -57,7 +57,7 @@
             <div class="menu_part"></div>
           </div>
         </label>
-        <p>hover : 위아래 벌어짐 <br/> click : 회전(45도)</p>
+        <p>line : 2개 <br/> hover : 위아래 벌어짐 <br/> click : 회전(45도)</p>
       </div>
 
       <!-- MENU-5 -->
@@ -71,11 +71,11 @@
             <div class="menu_part"></div>
           </div>
         </label>
-        <p>click : 2번쨰 줄 사라지고 x</p>
+        <p>line : 3개 <br/> hover : 없음 <br/> click : 2번쨰 줄 사라지고 x</p>
       </div>
     </div>
 
-    <div id="wrap">
+    <div class="wrap">
       <!-- MENU-6 -->
       <div>
         <input id="menu-6" type="checkbox" />
@@ -86,9 +86,110 @@
             <div class="menu_part"></div>
           </div>
         </label>
-        <p>hover : 위아래 벌어짐 <br/> click : 2번쨰 줄 사라지고 x</p>
+        <p>line : 3개 <br/> hover : 위아래 벌어짐 <br/> click : 2번쨰 줄 사라지고 x</p>
+      </div>
+
+      <!-- MENU-7 -->
+      <div>
+        <input id="menu-7" type="checkbox" />
+        <label for="menu-7" class="menu-7">
+          <div class="menu center">
+            <div class="menu_part"></div>
+            <div class="menu_part"></div>
+          </div>
+        </label>
+        <p>line : 2개 <br/> hover : 없음 <br/> click : 회전(225도)</p>
+      </div>
+
+      <!-- MENU-8 -->
+      <div>
+        <input id="menu-8" type="checkbox" />
+        <label for="menu-8" class="menu-8">
+          <div class="menu center">
+            <div class="menu_part"></div>
+            <div class="menu_part"></div>
+          </div>
+        </label>
+        <p>line : 2개 <br/> hover : 위아래 벌어짐 <br/> click : 회전(225도)</p>
+      </div>
+
+      <!-- MENU-9 보류 -->
+      <!-- <div class="cross menu--1">
+        <input id="menu-9" type="checkbox">
+        <label for="menu-9" class="menu-9">
+          <svg class="menu center" viewBox="0 0 100 50">
+            <circle class="circle-9" cx="50" cy="50" r="30" />
+            <path class="line--1" d="M0 40h62c13 0 6 28-4 18L35 35" />
+            <path class="line--2" d="M0 50h70" />
+            <path class="line--3" d="M0 60h62c13 0 6-28-4-18L35 65" />
+          </svg>
+        </label>
+        <p>line : 3개 <br/> hover : 없음 <br/> click : 오른쪽으로 커브 후, x표시 </p>
+      </div> -->
+
+      <!-- MENU-9 -->
+      <div>
+        <input id="menu-9" type="checkbox" />
+        <label for="menu-9" class="menu-9">
+          <div class="menu center">
+            <div class="menu_part"></div>
+            <div class="menu_part"></div>
+            <div class="menu_part"></div>
+          </div>
+        </label>
+        <p>line : 3개 <br/> hover : 없음 <br/> click : 1번째 3번째 회전(405도) </p>
+      </div>
+
+      <!-- MENU-10 -->
+      <div>
+        <input id="menu-10" type="checkbox" />
+        <label for="menu-10" class="menu-10">
+          <div class="menu center">
+            <div class="menu_part_top">
+              <div class="menu_part_left"></div>
+              <div class="menu_part_right"></div>
+            </div>
+            <div class="menu_part">
+              <div class="menu_part_left"></div>
+              <div class="menu_part_right"></div>
+            </div>
+            <div class="menu_part_bottom">
+              <div class="menu_part_left"></div>
+              <div class="menu_part_right"></div>
+            </div>
+          </div>
+        </label>
+        <p>line : 3개 <br/> hover : 없음 <br/> click : 1번째 3번째 반으로 쪼개서 x표시 </p>
       </div>
     </div>
+
+    <div class="wrap">
+      <!-- MENU-11 -->
+      <div>
+        <input id="menu-11" type="checkbox" />
+        <label for="menu-11" class="menu-11">
+          <div class="menu center">
+            <div class="menu_part_top">
+              <div class="menu_part_left"></div>
+              <div class="menu_part_right"></div>
+            </div>
+            <div class="menu_part">
+              <div class="menu_part_left"></div>
+              <div class="menu_part_right"></div>
+            </div>
+            <div class="menu_part_bottom">
+              <div class="menu_part_left"></div>
+              <div class="menu_part_right"></div>
+            </div>
+          </div>
+        </label>
+        <p>line : 3개 <br/> hover : 위아래 벌어짐 <br/> click : 1번째 3번째 반으로 쪼개서 x표시 </p>
+      </div>
+    </div>
+      
+      
+
+    
 
     
     

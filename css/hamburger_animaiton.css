@@ -11,20 +11,21 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 10px;
 }
-#wrap {
+.wrap {
   position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
   width: 1240px;
-  height: 200px;
+  height: 250px;
   flex-wrap: wrap;
 }
-#wrap > div {
+.wrap > div {
   display: flex; align-items: center; justify-content: space-between;
   flex-direction: column;
-  width: 240px; height: 150px;
+  width: 240px; height: 200px;
   margin: 0 auto;
 }
 
@@ -40,18 +41,27 @@ input[type="checkbox" i]{
 }
 label{
   display: flex; justify-content: center; align-items: center;
-  width: 200px; height: 100px;
+  width: 200px; height: 50px;
   cursor: default;
 }
 p {
   display: flex; justify-content: center; align-items: center;
-  width: 200px; height: 50px;
+  width: 200px; height: 150px;
   font-weight: 700;
 
   text-align: center;
 }
 .center {
   margin: auto 0;
+}
+
+svg {
+  display: flex; align-items: center; justify-content: center;
+}
+
+
+.top {
+  top: 20px;
 }
 
 /*!
@@ -63,7 +73,6 @@ p {
  #menu-1 {
 	display: none;
 }
-
 .menu-1 .menu {
   transition: all 0.27s;
   position: relative;
@@ -72,7 +81,6 @@ p {
   border-radius: 100%;
   cursor: pointer;
 }
-
 .menu-1 .menu_part {
   width: 30px; 
   height: 2px; 
@@ -90,108 +98,35 @@ p {
 	top: calc(50% - ((2.5px)) + -5px);
 	width: 30px
 }
-
-
 .menu-1 .menu_part:nth-of-type(2) {
 	top: calc(50% - ((2.5px)) + 2px);
 	width: 30px
 }
 
-
-		
+/* checked */
 input#menu-1:checked + label .menu {
 transform:scale(1.1400000000000001) rotate(0deg); 
 }
-
 input#menu-1:checked + label .menu .menu_part:nth-of-type(1) {
 transform: rotate(45deg);
 top: calc(50% - (1px))!important;
 width: 30px !important;
 }
-
 input#menu-1:checked + label .menu .menu_part:nth-of-type(2) {
 transform: rotate(-45deg);
 top: calc(50% - (1px))!important;
 width: 30px !important;
-}
-
-
-/*!
- * showroom
- * input[check] animation
- * 회전
- * css - hamburger menu-2
- */
-
- #menu-2 {
-	display: none;
-}
-
-.menu-2 .menu {
-  transition: all 0.14s;
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  cursor: pointer;
-}
-
-.menu-2 .menu_part {
-  width: 30px; 
-  height: 2px; 
-  position: absolute;
-  background: #313d44; 
-  right: 0;
-  margin: auto;
-  left: 0;
-  border-radius: 1px;
-  transition: all 0.5s cubic-bezier(0.8, 0.1, 0.1, 1.2);
-  width:24;top: calc(50% - ((5px)) + -2px);
-}
-
-.menu-2 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((5px)) + -2px);
-	width: 30px
-}
-
-
-.menu-2 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((5px)) + 4px);
-	width: 30px
-}
-
-
-		
-input#menu-2:checked + label .menu {
-  transition: all 0.5s ease;
-  transform:scale(1.08) rotate(180deg); 
-}
-
-input#menu-2:checked + label .menu .menu_part:nth-of-type(1) {
-  transition: all 0.5s ease;
-  transform: rotate(45deg);
-  top: calc(50% - (2px))!important;
-  width: 30px !important;
-}
-
-input#menu-2:checked + label .menu .menu_part:nth-of-type(2) {
-  transition: all 0.5s ease;
-  transform: rotate(-45deg);
-  top: calc(50% - (2px))!important;
-  width: 30px !important;
-}
-
+}/* //checked */
 
 /*!
  * showroom
  * hover후 기본(basic)
- * css - hamburger menu-3
+ * css - hamburger menu-2
  */
- #menu-3 {
+ #menu-2 {
 	display: none;
 }
-
-.menu-3 .menu {
+.menu-2 .menu {
   transition: all 0.27s;
   position: relative;
   width: 50px;
@@ -199,8 +134,7 @@ input#menu-2:checked + label .menu .menu_part:nth-of-type(2) {
   border-radius: 100%;
   cursor: pointer;
 }
-
-.menu-3 .menu_part {
+.menu-2 .menu_part {
   width: 30px; 
   height: 2px; 
   position: absolute;
@@ -212,51 +146,45 @@ input#menu-2:checked + label .menu .menu_part:nth-of-type(2) {
   transition: all 0.27s cubic-bezier(0.7, 0.1, 0.1, 1.7);
   top: calc(50% - ((2.5px)) + -1px);
 }
-
-.menu-3 .menu_part:nth-of-type(1) {
+.menu-2 .menu_part:nth-of-type(1) {
 	top: calc(50% - ((2.5px)) + -5px);
 	width: 30px
 }
-
-
-.menu-3 .menu_part:nth-of-type(2) {
+.menu-2 .menu_part:nth-of-type(2) {
 	top: calc(50% - ((2.5px)) + 2px);
 	width: 30px
 }
 
-
-		
-input#menu-3:checked + label .menu {
+/*checked*/
+input#menu-2:checked + label .menu {
 transform:scale(1.1400000000000001) rotate(0deg); 
 }
-
-input#menu-3:checked + label .menu .menu_part:nth-of-type(1) {
+input#menu-2:checked + label .menu .menu_part:nth-of-type(1) {
 transform: rotate(45deg);
 top: calc(50% - (1px))!important;
 width: 30px !important;
 }
-
-input#menu-3:checked + label .menu .menu_part:nth-of-type(2) {
+input#menu-2:checked + label .menu .menu_part:nth-of-type(2) {
 transform: rotate(-45deg);
 top: calc(50% - (1px))!important;
 width: 30px !important;
-}
+}/* //checked*/
 
-.menu-3 .menu:hover .menu_part:nth-child(1) {transition:all 0.2s linear; transform: translateY(-2px);} 
-.menu-3 .menu:hover .menu_part:nth-child(2) {transition:all 0.2s linear; transform: translateY(2px);} 
-
+/*hover*/
+.menu-2 .menu:hover .menu_part:nth-child(1) {transition:all 0.2s linear; transform: translateY(-2px);} 
+.menu-2 .menu:hover .menu_part:nth-child(2) {transition:all 0.2s linear; transform: translateY(2px);} 
+/* //hover*/
 
 /*!
  * showroom
- * 
- * css - hamburger menu-4
+ * input[check] animation
+ * 회전
+ * css - hamburger menu-3
  */
-
- #menu-4 {
+ #menu-3 {
 	display: none;
 }
-
-.menu-4 .menu {
+.menu-3 .menu {
   transition: all 0.14s;
   position: relative;
   width: 50px;
@@ -264,7 +192,62 @@ width: 30px !important;
   border-radius: 100%;
   cursor: pointer;
 }
+.menu-3 .menu_part {
+  width: 30px; 
+  height: 2px; 
+  position: absolute;
+  background: #313d44; 
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 1px;
+  transition: all 0.5s cubic-bezier(0.8, 0.1, 0.1, 1.2);
+  top: calc(50% - ((5px)) + -2px);
+}
 
+.menu-3 .menu_part:nth-of-type(1) {
+	top: calc(50% - ((5px)) + -2px);
+	width: 30px
+}
+.menu-3 .menu_part:nth-of-type(2) {
+	top: calc(50% - ((5px)) + 4px);
+	width: 30px
+}
+
+/*checked*/
+input#menu-3:checked + label .menu {
+  transition: all 0.5s ease;
+  transform:scale(1.08) rotate(180deg); 
+}
+input#menu-3:checked + label .menu .menu_part:nth-of-type(1) {
+  transition: all 0.5s ease;
+  transform: rotate(45deg);
+  top: calc(50% - (2px))!important;
+  width: 30px !important;
+}
+input#menu-3:checked + label .menu .menu_part:nth-of-type(2) {
+  transition: all 0.5s ease;
+  transform: rotate(-45deg);
+  top: calc(50% - (2px))!important;
+  width: 30px !important;
+}/*checked*/
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-4
+ */
+ #menu-4 {
+	display: none;
+}
+.menu-4 .menu {
+  transition: all 0.5s;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+}
 .menu-4 .menu_part {
   width: 30px; 
   height: 2px; 
@@ -274,51 +257,47 @@ width: 30px !important;
   margin: auto;
   left: 0;
   border-radius: 1px;
-  transition: all 0.14s cubic-bezier(0.8, 0.1, 0.1, 1.2);
-  width:24;top: calc(50% - ((5px)) + -2px);
+  transition: all 0.5s cubic-bezier(0.8, 0.1, 0.1, 1.2);
+  top: calc(50% - ((5px)) + -2px);
 }
 
 .menu-4 .menu_part:nth-of-type(1) {
 	top: calc(50% - ((5px)) + -2px);
 	width: 30px
 }
-
-
 .menu-4 .menu_part:nth-of-type(2) {
 	top: calc(50% - ((5px)) + 4px);
 	width: 30px
 }
 
-		
+/*checked*/
 input#menu-4:checked + label .menu {
-transform:scale(1.08) rotate(180deg); 
+  transform:scale(1.08) rotate(180deg); 
 }
-
 input#menu-4:checked + label .menu .menu_part:nth-of-type(1) {
   transform: rotate(45deg);
   top: calc(50% - (2px))!important;
   width: 30px !important;
 }
-
 input#menu-4:checked + label .menu .menu_part:nth-of-type(2) {
   transform: rotate(-45deg);
   top: calc(50% - (2px))!important;
   width: 30px !important;
-}
+}/* //checked*/
 
+/*hover*/
 .menu-4 .menu:hover .menu_part:nth-child(1) {transition:all 0.2s linear; transform: translateY(-2px);} 
 .menu-4 .menu:hover .menu_part:nth-child(2) {transition:all 0.2s linear; transform: translateY(2px);} 
+/*//hover*/
 
 /*!
  * showroom
  * 
  * css - hamburger menu-5
  */
-
  #menu-5 {
 	display: none;
 }
-
 .menu-5 .menu {
   width: 50px;
   height: 50px;
@@ -327,7 +306,6 @@ input#menu-4:checked + label .menu .menu_part:nth-of-type(2) {
   display: inline-block;
   margin: 0 auto;
 }
-
 .menu-5 .menu .menu_part {
   background-color: #000;
   position: absolute;
@@ -338,6 +316,7 @@ input#menu-4:checked + label .menu .menu_part:nth-of-type(2) {
   transition-duration: 500ms;
   margin: auto;
 }
+
 .menu-5 .menu_part:nth-of-type(1) {
   top: calc(50% - ((5px)) + -2px);
   left: 0px;
@@ -355,39 +334,24 @@ input#menu-4:checked + label .menu .menu_part:nth-of-type(2) {
   right: 0;
 }
 
-/* .menu-5 .menu:not(.open):hover .menu_part:nth-child(1){
-  transform: rotate(-3deg) scaleY(1.1);
-}
-
-.menu-5 .menu:not(.open):hover .menu_part:nth-child(2){
-  transform: rotate(3deg) scaleY(1.1);
-}
-
-.menu-5 .menu:not(.open):hover .menu_part:nth-child(3){
-  transform: rotate(-4deg) scaleY(1.1);
-} */
-
-.menu-5 .menu.open .menu_part:nth-child(1){
+/*checked*/
+input#menu-5:checked + label .menu .menu_part:nth-of-type(1) {
   top: calc(50% - (2px))!important;
   transform: rotate(45deg);
 }
-
-.menu-5 .menu.open .menu_part:nth-child(2){
+input#menu-5:checked + label .menu .menu_part:nth-of-type(2) {
   opacity: 0;
 }
-
-.menu-5 .menu.open .menu_part:nth-child(3){
+input#menu-5:checked + label .menu .menu_part:nth-of-type(3) {
   transform: rotate(-45deg);
   top: calc(50% - (2px))!important;
-}
-
+}/*checked*/
 
 /*!
  * showroom
  * 
  * css - hamburger menu-6
  */
-
  #menu-6 {
 	display: none;
 }
@@ -411,6 +375,7 @@ input#menu-4:checked + label .menu .menu_part:nth-of-type(2) {
   transition-duration: 500ms;
   margin: auto;
 }
+
 .menu-6 .menu_part:nth-of-type(1) {
   top: calc(50% - ((5px)) + -2px);
   left: 0px;
@@ -428,37 +393,491 @@ input#menu-4:checked + label .menu .menu_part:nth-of-type(2) {
   right: 0;
 }
 
-.menu-6:hover .menu_part:nth-of-type(1) {
-  top: calc(50% - ((5px)) + -6px);
-  left: 0px;
-  right: 0;
-}
-.menu-6:hover .menu_part:nth-of-type(2) {
-  top: calc(50% - ((5px)) + 4px);
-  left: 0px;
-  opacity:1;
-  right: 0;
-}
-.menu-6:hover .menu_part:nth-of-type(3) {
-  top: calc(50% - ((5px)) + 14px);
-  left: 0px;
-  right: 0;
-}
-
-
-.menu-6 .menu.open .menu_part:nth-child(1){
+/* checked */
+input#menu-6:checked + label .menu .menu_part:nth-of-type(1) {
   top: calc(50% - (2px))!important;
   transform: rotate(45deg);
 }
+input#menu-6:checked + label .menu .menu_part:nth-of-type(2) {
+  opacity: 0;
+}
+input#menu-6:checked + label .menu .menu_part:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: calc(50% - (2px))!important;
+}/* checked */
 
-.menu-6 .menu.open .menu_part:nth-child(2){
+/* hover */
+.menu-6:hover .menu_part:nth-of-type(1) {top: calc(50% - ((5px)) + -6px); left: 0px; right: 0;}
+.menu-6:hover .menu_part:nth-of-type(2) {top: calc(50% - ((5px)) + 4px ); left: 0px; right: 0;}
+.menu-6:hover .menu_part:nth-of-type(3) {top: calc(50% - ((5px)) + 14px); left: 0px; right: 0;}
+/* hover */
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-7
+ */
+
+ #menu-7 {
+  display: none;
+ } 
+ .menu-7 .menu {
+  transition: all 0.14s;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+ }
+ .menu-7 .menu .menu_part {
+  width: 30px; 
+  height: 2px; 
+  position: absolute;  
+  background-color: #000;
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 0px;
+  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+}
+
+/* 간격(gap)은 6px로 고정 */
+.menu-7 .menu_part:nth-of-type(1) {
+	top: calc(50% - ((2.5px)) + -2px);
+	width: 30px
+}
+.menu-7 .menu_part:nth-of-type(2) {
+	top: calc(50% - ((2.5px)) + 4px);
+	width: 30px
+}
+
+/* checked */
+input#menu-7:checked + label .menu {
+  transform:scale(1) rotate(180deg); 
+}
+input#menu-7:checked + label .menu .menu_part:nth-of-type(1) {
+  transform: rotate(225deg);
+  top: calc(50% - (1px))!important;
+}
+input#menu-7:checked + label .menu .menu_part:nth-of-type(2) {
+  transform: rotate(-225deg);
+  top: calc(50% - (1px))!important;
+}/* //checked */
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-8
+ */
+
+ #menu-8 {
+  display: none;
+ } 
+ .menu-8 .menu {
+  transition: all 0.14s;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+ }
+ .menu-8 .menu .menu_part {
+  width: 30px; 
+  height: 2px; 
+  position: absolute;  
+  background-color: #000;
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 0px;
+  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+}
+
+/* 간격(gap)은 6px로 고정 */
+.menu-8 .menu_part:nth-of-type(1) {
+	top: calc(50% - ((2.5px)) + -2px);
+	width: 30px
+}
+.menu-8 .menu_part:nth-of-type(2) {
+	top: calc(50% - ((2.5px)) + 4px);
+	width: 30px
+}
+
+/* checked */
+input#menu-8:checked + label .menu {
+  transform:scale(1) rotate(180deg); 
+}
+input#menu-8:checked + label .menu .menu_part:nth-of-type(1) {
+  transform: rotate(225deg);
+  top: calc(50% - (1px))!important;
+}
+input#menu-8:checked + label .menu .menu_part:nth-of-type(2) {
+  transform: rotate(-225deg);
+  top: calc(50% - (1px))!important;
+}/* //checked */
+
+/*hover*/
+.menu-8 .menu:hover .menu_part:nth-child(1) {transition:all 0.2s ease; transform: translateY(-2px);} 
+.menu-8 .menu:hover .menu_part:nth-child(2) {transition:all 0.2s ease; transform: translateY(2px);} 
+/* //hover*/
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-9
+ */ 
+/*///////////////////////보류//////////////////////////////*/
+/* #menu-9 { 
+  display: none;
+ }
+.menu-9 .menu { 
+  transition: all 0.14s;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+ }
+
+ path {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  --length: 24;
+  --offset: -38;
+  stroke-dasharray: var(--length) var(--total-length);
+  stroke-dashoffset: var(--offset);
+  transition: all .8s cubic-bezier(.645, .045, .355, 1);
+}
+
+.circle-9 {
+  width: 50px;
+  height: 50px;
+  fill: #fff3;
   opacity: 0;
 }
 
-.menu-6 .menu.open .menu_part:nth-child(3){
-  transform: rotate(-45deg);
-  top: calc(50% - (2px))!important;
+label:hover .circle-9 {
+  opacity: 1;
+}
+
+input#menu-9:checked + label .menu .line--1,
+input#menu-9:checked + label .menu .line--3 {
+  --length: 22.627416998;
+}
+
+input#menu-9:checked + label .menu .line--2 {
+  --length: 0;
+}
+
+.menu--1 .line--1,
+.menu--1 .line--3 {
+    --total-length: 126.64183044433594;
+}
+.menu--1 .line--2 {
+    --total-length: 70;
+}
+  
+input#menu-9:checked + label .menu .line--1,
+input#menu-9:checked + label .menu .line--3 {
+  --offset: -94.1149185097;
+}
+input#menu-9:checked + label .menu .line--2 {
+  --offset: -50;
+} */
+/*///////////////////////보류//////////////////////////////*/
+
+
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-9
+ */ 
+
+ #menu-9 {
+  display: none;
+ } 
+ .menu-9 .menu {
+  transition: all 0.14s;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+ }
+ .menu-9 .menu .menu_part {
+  width: 30px; 
+  height: 2px; 
+  position: absolute;  
+  background-color: #000;
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 0px;
+  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+}
+
+/* 간격(gap)은 6px로 고정 */
+.menu-9 .menu_part:nth-of-type(1) {
+	top: calc(50% - ((2.5px)) + -2px);
+	width: 30px
+}
+.menu-9 .menu_part:nth-of-type(2) {
+	top: calc(50% - ((2.5px)) + 4px);
+	width: 30px
+}
+.menu-9 .menu_part:nth-of-type(3) {
+  top: calc(50% - ((2.5px)) + 10px);
+	width: 30px
+}
+
+/* checked */
+input#menu-9:checked + label .menu {
+  transform:scale(1) rotate(180deg); 
+}
+input#menu-9:checked + label .menu .menu_part:nth-of-type(1) {
+  transform: rotate(405deg);
+  top: calc(50% - (1px))!important;
+}
+input#menu-9:checked + label .menu .menu_part:nth-of-type(2) {
+  background: rgba(255, 255, 255, 0);
+}
+input#menu-9:checked + label .menu .menu_part:nth-of-type(3) {
+  top: calc(50% - (1px))!important;
+  transform: rotate(-405deg);
+}/* //checked */
+
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-10
+ */ 
+
+ #menu-10 {
+  display: none;
+ } 
+ .menu-10 .menu {
+  transition: all 0.14s;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+ }
+ .menu-10 .menu .menu_part {
+  background-color: #000;
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 0px;
+  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  opacity: 1;
+ }
+
+/* 간격(gap)은 6px로 고정 */
+.menu-10 .menu_part_top .menu_part_left { /* 첫번째 줄 왼쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + -2px);
+  left: 10px;
+}
+.menu-10 .menu_part .menu_part_left { /* 두번째 줄 왼쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 4px);
+  left: 10px;
+}
+.menu-10 .menu_part_bottom .menu_part_left { /* 세번째 줄 왼쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 10px);
+  left: 10px;
+}
+.menu-10 .menu_part_top .menu_part_right { /* 첫번째 줄 오른쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + -2px);
+  right: 10px;
+}
+.menu-10 .menu_part .menu_part_right { /* 두번째 줄 오른쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 4px);
+  right: 10px;
+}
+.menu-10 .menu_part_bottom .menu_part_right { /* 세번째 줄 오른쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 10px);
+  right: 10px;
 }
 
 
+/*check*/
+input#menu-10:checked + label .menu_part_top .menu_part_left {
+  width: 18px;
+  top: calc(50% - (6px))!important;
+  transform: rotateZ(45deg);
+}
+input#menu-10:checked + label .menu_part_top .menu_part_right {
+  width: 18px;
+  top: calc(50% - (6px))!important;
+  transform: rotateZ(-45deg);  
+}
+input#menu-10:checked + label .menu_part {
+  opacity: 0;
+}
+input#menu-10:checked + label .menu_part_bottom .menu_part_left {
+  width: 18px;
+  top: calc(50% + (6px))!important;
+  transform: rotateZ(-45deg);
+}
+input#menu-10:checked + label .menu_part_bottom .menu_part_right {
+  width: 18px;
+  top: calc(50% + (6px))!important;
+  transform: rotateZ(45deg);
+} /* //check*/
 
+
+/*!
+ * showroom
+ * 
+ * css - hamburger menu-11
+ */ 
+
+ #menu-11 {
+  display: none;
+ } 
+ .menu-11 .menu {
+  transition: all 0.14s;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+ }
+ .menu-11 .menu .menu_part {
+  background-color: #000;
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 0px;
+  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  opacity: 1;
+ }
+
+/* 간격(gap)은 6px로 고정 */
+.menu-11 .menu_part_top .menu_part_left { /* 첫번째 줄 왼쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + -2px);
+  left: 10px;
+}
+.menu-11 .menu_part .menu_part_left { /* 두번째 줄 왼쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 4px);
+  left: 10px;
+}
+.menu-11 .menu_part_bottom .menu_part_left { /* 세번째 줄 왼쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 10px);
+  left: 10px;
+}
+.menu-11 .menu_part_top .menu_part_right { /* 첫번째 줄 오른쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + -2px);
+  right: 10px;
+}
+.menu-11 .menu_part .menu_part_right { /* 두번째 줄 오른쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 4px);
+  right: 10px;
+}
+.menu-11 .menu_part_bottom .menu_part_right { /* 세번째 줄 오른쪽 선 */
+  position: absolute;
+  content: "";
+  transition-duration: 0.5s;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - ((2.5px)) + 10px);
+  right: 10px;
+}
+
+
+/*check*/
+input#menu-11:checked + label .menu_part_top .menu_part_left {
+  width: 18px;
+  top: calc(50% - (6px))!important;
+  transform: rotateZ(45deg);
+}
+input#menu-11:checked + label .menu_part_top .menu_part_right {
+  width: 18px;
+  top: calc(50% - (6px))!important;
+  transform: rotateZ(-45deg);  
+}
+input#menu-11:checked + label .menu_part {
+  opacity: 0;
+}
+input#menu-11:checked + label .menu_part_bottom .menu_part_left {
+  width: 18px;
+  top: calc(50% + (6px))!important;
+  transform: rotateZ(-45deg);
+}
+input#menu-11:checked + label .menu_part_bottom .menu_part_right {
+  width: 18px;
+  top: calc(50% + (6px))!important;
+  transform: rotateZ(45deg);
+} /* //check*/
