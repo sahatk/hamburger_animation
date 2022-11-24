@@ -1615,66 +1615,91 @@ input#menu-19:checked + label .menu .menu_part:nth-of-type(3) {
  * css - hamburger menu-19
  */ 
 
- /*!
+/*!
  * showroom
  * 
- * css - hamburger menu-5
- */
+ * css - hamburger menu-20
+ */ 
 
  #menu-20 {
-	display: none;
-}
+  display: none;
+ } 
 .menu-20 .menu {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 auto;
+ transition: all 0.14s;
+ position: relative;
+ width: 50px;
+ height: 50px;
+ border-radius: 100%;
+ cursor: pointer;
 }
 .menu-20 .menu .menu_part {
+  width: 30px; 
+  height: 2px; 
+  position: absolute;  
   background-color: #000;
-  position: absolute;
-  border-radius: 2px;
-  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
-  width:30px;
-  height: 2px;
-  transition-duration: 500ms;
+  right: 0;
   margin: auto;
+  left: 0;
+  border-radius: 0px;
+  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
 }
 
+/* 간격(gap)은 6px로 고정 */
 .menu-20 .menu_part:nth-of-type(1) {
-  top: calc(50% - ((5px)) + -2px);
-  left: 0px;
-  right: 0;
+	top: calc(50% - ((2.5px)) + -2px);
+	width: 30px;
+  transition: all 0.48s ease-in-out;
 }
 .menu-20 .menu_part:nth-of-type(2) {
-  top: calc(50% - ((5px)) + 4px);
-  left: 0px;
-  opacity:1;
-  right: 0;
+	top: calc(50% - ((2.5px)) + 4px);
+	width: 30px;
+  transition: all 0.48s ease-in-out;
 }
 .menu-20 .menu_part:nth-of-type(3) {
-  top: calc(50% - ((5px)) + 10px);
-  left: 0px;
-  right: 0;
+  top: calc(50% - ((2.5px)) + 10px);
+	width: 30px;
+  transition: all 0.48s ease-in-out;
+}
+.menu-20 .menu_part:nth-of-type(4) {
+  top: calc(50% - ((2.5px)) + 4px);
+  width: 30px;
+  transform: rotate(90deg);
+  opacity: 0;
+  transition: all 0.48s ease-in-out;
+}
+.menu-20 .menu_part:nth-of-type(5) {
+  width: 30px;
+	top: calc(50% - ((2.5px)) + 4px);
+  opacity: 0;
+  transition: all 0.48s ease-in-out;
 }
 
-/*checked*/
 input#menu-20:checked + label .menu .menu_part:nth-of-type(1) {
-  transform: rotate(45deg);
-  background: none;
-  border-bottom: 4px solid #fff;
-  border-right: 4px solid #fff;
-}
-input#menu-20:checked + label .menu .menu_part:nth-of-type(2) {
+  transform: translateY(-100px);
   opacity: 0;
 }
-input#menu-20:checked + label .menu .menu_part:nth-of-type(3) {
-  transform: rotate(-45deg);
-  top: calc(50% - (2px))!important;
-}/*checked*/
 
+input#menu-20:checked + label .menu .menu_part:nth-of-type(2) {
+  transform: translateY(-100px);
+  opacity: 0;
+}
+
+input#menu-20:checked + label .menu .menu_part:nth-of-type(3) {
+  transform: translateY(-100px);
+  opacity: 0;
+}
+
+input#menu-20:checked + label .menu .menu_part:nth-of-type(4) {
+  opacity: 1;
+  transform: rotate(135deg);
+  transition: transform 0.48s 0.5s;
+}
+
+input#menu-20:checked + label .menu .menu_part:nth-of-type(5) {
+  opacity: 1;
+  transform: rotate(45deg);
+  transition: transform 0.48s 0.5s;
+}
 
 
 
