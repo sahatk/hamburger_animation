@@ -82,52 +82,41 @@ svg {
 	display: none;
 }
 .menu-1 .menu {
-  transition: all 0.27s;
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   cursor: pointer;
 }
 .menu-1 .menu_part {
   width: 30px; 
   height: 2px; 
   position: absolute;
-  background: #313d44; 
   right: 0;
   margin: auto;
   left: 0;
   border-radius: 1px;
-  transition: all 0.27s cubic-bezier(0.7, 0.1, 0.1, 1.7);
-  top: calc(50% - ((2.5px)) + -1px);
+  transition: all 0.1s linear;
+  /* top: calc(50% - ((2.5px)) + -1px); */
 }
 
 .menu-1 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((2.5px)) + -5px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% + -5px);
 }
 .menu-1 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((2.5px)) + 2px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% + 5px);
 }
 
 /* checked */
 input#menu-1:checked + label .menu {
-transform:scale(1.1400000000000001) rotate(0deg); 
+transform:rotate(0deg); 
 }
 input#menu-1:checked + label .menu .menu_part:nth-of-type(1) {
 transform: rotate(45deg);
-top: calc(50% - (1px))!important;
-width: 30px !important;
-transition: all 0.48s ease-in-out;
+top: calc(50% - (1px));
 }
 input#menu-1:checked + label .menu .menu_part:nth-of-type(2) {
 transform: rotate(-45deg);
-top: calc(50% - (1px))!important;
-width: 30px !important;
-transition: all 0.48s ease-in-out;
+top: calc(50% - (1px));
 }/* //checked */
 
 /*!
@@ -139,56 +128,44 @@ transition: all 0.48s ease-in-out;
 	display: none;
 }
 .menu-2 .menu {
-  transition: all 0.27s;
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   cursor: pointer;
 }
 .menu-2 .menu_part {
   width: 30px; 
   height: 2px; 
   position: absolute;
-  background: #313d44; 
   right: 0;
   margin: auto;
   left: 0;
   border-radius: 1px;
-  transition: all 0.27s cubic-bezier(0.7, 0.1, 0.1, 1.7);
-  top: calc(50% - ((2.5px)) + -1px);
+  transition: all 0.1s linear;
 }
 .menu-2 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((2.5px)) + -5px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% + -5px);
 }
 .menu-2 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((2.5px)) + 2px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% + 5px);
 }
 
 /*checked*/
 input#menu-2:checked + label .menu {
-transform:scale(1.1400000000000001) rotate(0deg); 
+transform: rotate(0deg); 
 }
 input#menu-2:checked + label .menu .menu_part:nth-of-type(1) {
 transform: rotate(45deg);
-top: calc(50% - (1px))!important;
-width: 30px !important;
-transition: all 0.48s ease-in-out;
+top: calc(50% - (1px));
 }
 input#menu-2:checked + label .menu .menu_part:nth-of-type(2) {
 transform: rotate(-45deg);
-top: calc(50% - (1px))!important;
-width: 30px !important;
-transition: all 0.48s ease-in-out;
+top: calc(50% - (1px));
 }/* //checked*/
 
 /*hover*/
-.menu-2 .menu:hover .menu_part:nth-child(1) {transition:all 0.2s linear; transform: translateY(-2px);} 
-.menu-2 .menu:hover .menu_part:nth-child(2) {transition:all 0.2s linear; transform: translateY(2px);} 
+.menu-2 .menu:hover .menu_part:nth-child(1) {transition:all 0.1s linear; transform: translateY(-2px);} 
+.menu-2 .menu:hover .menu_part:nth-child(2) {transition:all 0.1s linear; transform: translateY(2px);} 
 /* //hover*/
 
 /*!
@@ -201,51 +178,42 @@ transition: all 0.48s ease-in-out;
 	display: none;
 }
 .menu-3 .menu {
-  transition: all 0.14s;
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   cursor: pointer;
 }
 .menu-3 .menu_part {
   width: 30px; 
   height: 2px; 
   position: absolute;
-  background: #313d44; 
   right: 0;
   margin: auto;
   left: 0;
   border-radius: 1px;
-  transition: all 0.5s cubic-bezier(0.8, 0.1, 0.1, 1.2);
-  top: calc(50% - ((5px)) + -2px);
+  transition: all 0.1s linear;
+  /* top: calc(50% - ((5px)) + 0px); */
 }
 
 .menu-3 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((5px)) + -2px);
-	width: 30px
+	top: calc(50% + -5px);
 }
 .menu-3 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((5px)) + 4px);
-	width: 30px
+	top: calc(50% + 5px);
 }
 
 /*checked*/
 input#menu-3:checked + label .menu {
-  transition: all 0.5s ease;
-  transform:scale(1.08) rotate(180deg); 
+  transition: all 0.1s linear;
+  transform:rotate(180deg); 
 }
 input#menu-3:checked + label .menu .menu_part:nth-of-type(1) {
-  transition: all 0.5s ease;
   transform: rotate(45deg);
-  top: calc(50% - (2px))!important;
-  width: 30px !important;
+  top: calc(50% - (1px));
 }
 input#menu-3:checked + label .menu .menu_part:nth-of-type(2) {
-  transition: all 0.5s ease;
   transform: rotate(-45deg);
-  top: calc(50% - (2px))!important;
-  width: 30px !important;
+  top: calc(50% - (1px));
 }/*checked*/
 
 /*!
@@ -257,53 +225,47 @@ input#menu-3:checked + label .menu .menu_part:nth-of-type(2) {
 	display: none;
 }
 .menu-4 .menu {
-  transition: all 0.5s;
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   cursor: pointer;
 }
 .menu-4 .menu_part {
   width: 30px; 
   height: 2px; 
   position: absolute;
-  background: #313d44; 
   right: 0;
   margin: auto;
   left: 0;
   border-radius: 1px;
-  transition: all 0.5s cubic-bezier(0.8, 0.1, 0.1, 1.2);
-  top: calc(50% - ((5px)) + -2px);
+  transition: all 0.1s linear;
+  /* top: calc(50% - ((5px)) + -2px); */
 }
 
 .menu-4 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((5px)) + -2px);
-	width: 30px
+	top: calc(50% + -5px);
 }
 .menu-4 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((5px)) + 4px);
-	width: 30px
+	top: calc(50% + 5px);
 }
 
 /*checked*/
 input#menu-4:checked + label .menu {
-  transform:scale(1.08) rotate(180deg); 
+  transition: all 0.1s linear;
+  transform:rotate(180deg); 
 }
 input#menu-4:checked + label .menu .menu_part:nth-of-type(1) {
   transform: rotate(45deg);
-  top: calc(50% - (2px))!important;
-  width: 30px !important;
+  top: calc(50% - (1px));
 }
 input#menu-4:checked + label .menu .menu_part:nth-of-type(2) {
   transform: rotate(-45deg);
-  top: calc(50% - (2px))!important;
-  width: 30px !important;
+  top: calc(50% - (1px));
 }/* //checked*/
 
 /*hover*/
-.menu-4 .menu:hover .menu_part:nth-child(1) {transition:all 0.2s linear; transform: translateY(-2px);} 
-.menu-4 .menu:hover .menu_part:nth-child(2) {transition:all 0.2s linear; transform: translateY(2px);} 
+.menu-4 .menu:hover .menu_part:nth-child(1) {transition:all 0.1s linear; transform: translateY(-2px);} 
+.menu-4 .menu:hover .menu_part:nth-child(2) {transition:all 0.1s linear; transform: translateY(2px);} 
 /*//hover*/
 
 /*!
@@ -315,44 +277,39 @@ input#menu-4:checked + label .menu .menu_part:nth-of-type(2) {
 	display: none;
 }
 .menu-5 .menu {
+  position: relative;
   width: 50px;
   height: 50px;
-  position: relative;
   cursor: pointer;
-  display: inline-block;
-  margin: 0 auto;
 }
 .menu-5 .menu .menu_part {
-  background-color: #000;
+  width: 30px; 
+  height: 2px; 
   position: absolute;
-  border-radius: 2px;
-  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
-  width:30px;
-  height: 2px;
-  transition-duration: 500ms;
+  right: 0;
   margin: auto;
+  left: 0;
+  border-radius: 1px;
+  transition: all 0.1s linear;
 }
 
 .menu-5 .menu_part:nth-of-type(1) {
-  top: calc(50% - ((5px)) + -2px);
-  left: 0px;
-  right: 0;
+	top: calc(50% - ((5px)) + -5px);
 }
 .menu-5 .menu_part:nth-of-type(2) {
-  top: calc(50% - ((5px)) + 4px);
-  left: 0px;
+	top: calc(50% - ((5px)) + 5px);
   opacity:1;
-  right: 0;
 }
 .menu-5 .menu_part:nth-of-type(3) {
-  top: calc(50% - ((5px)) + 10px);
-  left: 0px;
-  right: 0;
+	top: calc(50% - ((5px)) + 15px);
 }
 
 /*checked*/
+input#menu-5:checked + label .menu {
+  transform:rotate(0deg); 
+  }
 input#menu-5:checked + label .menu .menu_part:nth-of-type(1) {
-  top: calc(50% - (2px))!important;
+  top: calc(50% - (1px));
   transform: rotate(45deg);
 }
 input#menu-5:checked + label .menu .menu_part:nth-of-type(2) {
@@ -360,7 +317,7 @@ input#menu-5:checked + label .menu .menu_part:nth-of-type(2) {
 }
 input#menu-5:checked + label .menu .menu_part:nth-of-type(3) {
   transform: rotate(-45deg);
-  top: calc(50% - (2px))!important;
+  top: calc(50% - (1px));
 }/*checked*/
 
 /*!
@@ -373,59 +330,54 @@ input#menu-5:checked + label .menu .menu_part:nth-of-type(3) {
 }
 
 .menu-6 .menu {
+  position: relative;
   width: 50px;
   height: 50px;
-  position: relative;
   cursor: pointer;
-  display: inline-block;
-  margin: 0 auto;
 }
 
 .menu-6 .menu .menu_part {
-  background-color: #000;
+  width: 30px; 
+  height: 2px; 
   position: absolute;
-  border-radius: 2px;
-  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
-  width:30px;
-  height: 2px;
-  transition-duration: 500ms;
+  right: 0;
   margin: auto;
+  left: 0;
+  border-radius: 1px;
+  transition: all 0.1s linear;
 }
 
 .menu-6 .menu_part:nth-of-type(1) {
-  top: calc(50% - ((5px)) + -2px);
-  left: 0px;
-  right: 0;
+	top: calc(50% - ((5px)) + -5px);
 }
 .menu-6 .menu_part:nth-of-type(2) {
-  top: calc(50% - ((5px)) + 4px);
-  left: 0px;
+	top: calc(50% - ((5px)) + 5px);
   opacity:1;
-  right: 0;
 }
 .menu-6 .menu_part:nth-of-type(3) {
-  top: calc(50% - ((5px)) + 10px);
-  left: 0px;
-  right: 0;
+	top: calc(50% - ((5px)) + 15px);
 }
 
 /* checked */
+input#menu-6:checked + label .menu {
+  transform:rotate(0deg); 
+  }
 input#menu-6:checked + label .menu .menu_part:nth-of-type(1) {
-  top: calc(50% - (2px))!important;
+  top: calc(50% - (1px));
   transform: rotate(45deg);
 }
 input#menu-6:checked + label .menu .menu_part:nth-of-type(2) {
   opacity: 0;
 }
 input#menu-6:checked + label .menu .menu_part:nth-of-type(3) {
+  top: calc(50% - (1px));
   transform: rotate(-45deg);
-  top: calc(50% - (2px))!important;
 }/* checked */
 
 /* hover */
-.menu-6:hover .menu_part:nth-of-type(1) {top: calc(50% - ((5px)) + -6px); left: 0px; right: 0;}
-.menu-6:hover .menu_part:nth-of-type(2) {top: calc(50% - ((5px)) + 4px ); left: 0px; right: 0;}
-.menu-6:hover .menu_part:nth-of-type(3) {top: calc(50% - ((5px)) + 14px); left: 0px; right: 0;}
+.menu-6:hover .menu_part:nth-of-type(1) {transition:all 0.1s linear; transform: translateY(-2px);}
+.menu-6:hover .menu_part:nth-of-type(2) {transition:all 0.1s linear; transform: translateY(0px);}
+.menu-6:hover .menu_part:nth-of-type(3) {transition:all 0.1s linear; transform: translateY(2px);}
 /* hover */
 
 /*!
@@ -438,46 +390,41 @@ input#menu-6:checked + label .menu .menu_part:nth-of-type(3) {
   display: none;
  } 
  .menu-7 .menu {
-  transition: all 0.14s;
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   cursor: pointer;
  }
  .menu-7 .menu .menu_part {
   width: 30px; 
   height: 2px; 
-  position: absolute;  
-  background-color: #000;
+  position: absolute;
   right: 0;
   margin: auto;
   left: 0;
-  border-radius: 0px;
-  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  border-radius: 1px;
+  transition: all 0.1s linear;
 }
 
-/* 간격(gap)은 6px로 고정 */
+/* 간격(gap)은 10px로 고정 */
 .menu-7 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((2.5px)) + -2px);
-	width: 30px
+	top: calc(50% + -5px);
 }
 .menu-7 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((2.5px)) + 4px);
-	width: 30px
+	top: calc(50% + 5px);
 }
 
 /* checked */
 input#menu-7:checked + label .menu {
-  transform:scale(1) rotate(180deg); 
+  transform: rotate(180deg); 
 }
 input#menu-7:checked + label .menu .menu_part:nth-of-type(1) {
   transform: rotate(225deg);
-  top: calc(50% - (1px))!important;
+  top: calc(50% - (1px));
 }
 input#menu-7:checked + label .menu .menu_part:nth-of-type(2) {
   transform: rotate(-225deg);
-  top: calc(50% - (1px))!important;
+  top: calc(50% - (1px));
 }/* //checked */
 
 /*!
@@ -490,51 +437,46 @@ input#menu-7:checked + label .menu .menu_part:nth-of-type(2) {
   display: none;
  } 
  .menu-8 .menu {
-  transition: all 0.14s;
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   cursor: pointer;
  }
  .menu-8 .menu .menu_part {
   width: 30px; 
   height: 2px; 
-  position: absolute;  
-  background-color: #000;
+  position: absolute;
   right: 0;
   margin: auto;
   left: 0;
-  border-radius: 0px;
-  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  border-radius: 1px;
+  transition: all 0.1s linear;
 }
 
-/* 간격(gap)은 6px로 고정 */
+/* 간격(gap)은 10px로 고정 */
 .menu-8 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((2.5px)) + -2px);
-	width: 30px
+	top: calc(50% + -5px);
 }
 .menu-8 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((2.5px)) + 4px);
-	width: 30px
+	top: calc(50% + 5px);
 }
 
 /* checked */
 input#menu-8:checked + label .menu {
-  transform:scale(1) rotate(180deg); 
+  transform:rotate(180deg); 
 }
 input#menu-8:checked + label .menu .menu_part:nth-of-type(1) {
   transform: rotate(225deg);
-  top: calc(50% - (1px))!important;
+  top: calc(50% - (1px));
 }
 input#menu-8:checked + label .menu .menu_part:nth-of-type(2) {
   transform: rotate(-225deg);
-  top: calc(50% - (1px))!important;
+  top: calc(50% - (1px));
 }/* //checked */
 
 /*hover*/
-.menu-8 .menu:hover .menu_part:nth-child(1) {transition:all 0.2s ease; transform: translateY(-2px);} 
-.menu-8 .menu:hover .menu_part:nth-child(2) {transition:all 0.2s ease; transform: translateY(2px);} 
+.menu-8 .menu:hover .menu_part:nth-child(1) {transition:all 0.1s linear; transform: translateY(-2px);} 
+.menu-8 .menu:hover .menu_part:nth-child(2) {transition:all 0.1s linear; transform: translateY(2px);} 
 /* //hover*/
 
 /*!
@@ -617,49 +559,43 @@ input#menu-9:checked + label .menu .line--2 {
   display: none;
  } 
  .menu-9 .menu {
-  transition: all 0.14s;
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   cursor: pointer;
  }
  .menu-9 .menu .menu_part {
   width: 30px; 
   height: 2px; 
-  position: absolute;  
-  background-color: #000;
+  position: absolute;
   right: 0;
   margin: auto;
   left: 0;
-  border-radius: 0px;
-  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  border-radius: 1px;
+  transition: all 0.1s linear;
 }
 
-/* 간격(gap)은 6px로 고정 */
+/* 간격(gap)은 10px로 고정 */
 .menu-9 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((2.5px)) + -2px);
-	width: 30px
+	top: calc(50% - ((5px)) + -5px);
 }
 .menu-9 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((2.5px)) + 4px);
-	width: 30px
+	top: calc(50% - ((5px)) + 5px);
 }
 .menu-9 .menu_part:nth-of-type(3) {
-  top: calc(50% - ((2.5px)) + 10px);
-	width: 30px
+  top: calc(50% - ((5px)) + 15px);
 }
 
 /* checked */
 input#menu-9:checked + label .menu .menu_part:nth-of-type(1) {
   transform: rotate(405deg);
-  top: calc(50% - (1px))!important;
+  top: calc(50% - (1px));
 }
 input#menu-9:checked + label .menu .menu_part:nth-of-type(2) {
   opacity: 0;
 }
 input#menu-9:checked + label .menu .menu_part:nth-of-type(3) {
-  top: calc(50% - (1px))!important;
+  top: calc(50% - (1px));
   transform: rotate(-405deg);
 }/* //checked */
 
@@ -674,95 +610,64 @@ input#menu-9:checked + label .menu .menu_part:nth-of-type(3) {
   display: none;
  } 
  .menu-10 .menu {
-  transition: all 0.14s;
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   cursor: pointer;
  }
  .menu-10 .menu .menu_part {
-  background-color: #000;
   right: 0;
   margin: auto;
   left: 0;
-  border-radius: 0px;
-  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  border-radius: 1px;
   opacity: 1;
  }
 
-/* 간격(gap)은 6px로 고정 */
-.menu-10 .menu_part_top .menu_part_left { /* 첫번째 줄 왼쪽 선 */
+ .menu-10 .menu_part_left,
+ .menu-10 .menu_part_right {
   position: absolute;
   content: "";
-  transition-duration: 0.5s;
+  transition: all 0.1s linear;
   width: 15px;
   height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + -2px);
+ }
+
+/* 간격(gap)은 10px로 고정 */
+.menu-10 .menu_part_top .menu_part_left { /* 첫번째 줄 왼쪽 선 */
+	top: calc(50% - ((5px)) + -5px);
   left: 10px;
 }
 .menu-10 .menu_part .menu_part_left { /* 두번째 줄 왼쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 4px);
+	top: calc(50% - ((5px)) + 5px);
   left: 10px;
 }
 .menu-10 .menu_part_bottom .menu_part_left { /* 세번째 줄 왼쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 10px);
+	top: calc(50% - ((5px)) + 15px);
   left: 10px;
 }
 .menu-10 .menu_part_top .menu_part_right { /* 첫번째 줄 오른쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + -2px);
+	top: calc(50% - ((5px)) + -5px);
   right: 10px;
 }
 .menu-10 .menu_part .menu_part_right { /* 두번째 줄 오른쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 4px);
+	top: calc(50% - ((5px)) + 5px);
   right: 10px;
 }
 .menu-10 .menu_part_bottom .menu_part_right { /* 세번째 줄 오른쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 10px);
+	top: calc(50% - ((5px)) + 15px);
   right: 10px;
 }
 
 
-/*check*/
+/*checked*/
 input#menu-10:checked + label .menu_part_top .menu_part_left {
   width: 18px;
-  top: calc(50% - (6px))!important;
+  top: calc(50% - (6px));
   transform: rotateZ(45deg);
 }
 input#menu-10:checked + label .menu_part_top .menu_part_right {
   width: 18px;
-  top: calc(50% - (6px))!important;
+  top: calc(50% - (6px));
   transform: rotateZ(-45deg);  
 }
 input#menu-10:checked + label .menu_part {
@@ -770,14 +675,14 @@ input#menu-10:checked + label .menu_part {
 }
 input#menu-10:checked + label .menu_part_bottom .menu_part_left {
   width: 18px;
-  top: calc(50% + (6px))!important;
+  top: calc(50% + (6px));
   transform: rotateZ(-45deg);
 }
 input#menu-10:checked + label .menu_part_bottom .menu_part_right {
   width: 18px;
-  top: calc(50% + (6px))!important;
+  top: calc(50% + (6px));
   transform: rotateZ(45deg);
-} /* //check*/
+} /* //checked*/
 
 
 /*!
@@ -790,95 +695,65 @@ input#menu-10:checked + label .menu_part_bottom .menu_part_right {
   display: none;
  } 
  .menu-11 .menu {
-  transition: all 0.14s;
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   cursor: pointer;
  }
  .menu-11 .menu .menu_part {
-  background-color: #000;
   right: 0;
   margin: auto;
   left: 0;
-  border-radius: 0px;
-  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  border-radius: 1px;
   opacity: 1;
  }
 
-/* 간격(gap)은 6px로 고정 */
-.menu-11 .menu_part_top .menu_part_left { /* 첫번째 줄 왼쪽 선 */
+ .menu-11 .menu_part_left,
+ .menu-11 .menu_part_right {
   position: absolute;
   content: "";
-  transition-duration: 0.5s;
+  transition: all 0.1s linear;
   width: 15px;
   height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + -2px);
+ }
+
+/* 간격(gap)은 10px로 고정 */
+.menu-11 .menu_part_top .menu_part_left { /* 첫번째 줄 왼쪽 선 */
+	top: calc(50% - ((5px)) + -5px);
   left: 10px;
 }
 .menu-11 .menu_part .menu_part_left { /* 두번째 줄 왼쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 4px);
+	top: calc(50% - ((5px)) + 5px);
   left: 10px;
 }
 .menu-11 .menu_part_bottom .menu_part_left { /* 세번째 줄 왼쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 10px);
+	top: calc(50% - ((5px)) + 15px);
   left: 10px;
 }
 .menu-11 .menu_part_top .menu_part_right { /* 첫번째 줄 오른쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + -2px);
+	top: calc(50% - ((5px)) + -5px);
   right: 10px;
 }
 .menu-11 .menu_part .menu_part_right { /* 두번째 줄 오른쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 4px);
+	top: calc(50% - ((5px)) + 5px);
   right: 10px;
 }
 .menu-11 .menu_part_bottom .menu_part_right { /* 세번째 줄 오른쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 10px);
+	top: calc(50% - ((5px)) + 15px);
   right: 10px;
 }
+
 
 
 /*check*/
 input#menu-11:checked + label .menu_part_top .menu_part_left {
   width: 18px;
-  top: calc(50% - (6px))!important;
+  top: calc(50% - (6px));
   transform: rotateZ(45deg);
 }
 input#menu-11:checked + label .menu_part_top .menu_part_right {
   width: 18px;
-  top: calc(50% - (6px))!important;
+  top: calc(50% - (6px));
   transform: rotateZ(-45deg);  
 }
 input#menu-11:checked + label .menu_part {
@@ -886,20 +761,20 @@ input#menu-11:checked + label .menu_part {
 }
 input#menu-11:checked + label .menu_part_bottom .menu_part_left {
   width: 18px;
-  top: calc(50% + (6px))!important;
+  top: calc(50% + (6px));
   transform: rotateZ(-45deg);
 }
 input#menu-11:checked + label .menu_part_bottom .menu_part_right {
   width: 18px;
-  top: calc(50% + (6px))!important;
+  top: calc(50% + (6px));
   transform: rotateZ(45deg);
 } /* //check*/
 
 /*hover*/
-.menu-11 .menu:hover .menu_part_top .menu_part_right{transition:all 0.2s ease; transform: translateY(-2px);} 
-.menu-11 .menu:hover .menu_part_top .menu_part_left{transition:all 0.2s ease; transform: translateY(-2px);}
-.menu-11 .menu:hover .menu_part_bottom .menu_part_left{transition:all 0.2s ease; transform: translateY(2px);} 
-.menu-11 .menu:hover .menu_part_bottom .menu_part_right{transition:all 0.2s ease; transform: translateY(2px);} 
+.menu-11 .menu:hover .menu_part_top .menu_part_right{transition:all 0.1s linear; transform: translateY(-2px);} 
+.menu-11 .menu:hover .menu_part_top .menu_part_left{transition:all 0.1s linear; transform: translateY(-2px);}
+.menu-11 .menu:hover .menu_part_bottom .menu_part_left{transition:all 0.1s linear; transform: translateY(2px);} 
+.menu-11 .menu:hover .menu_part_bottom .menu_part_right{transition:all 0.1s linear; transform: translateY(2px);} 
 /* //hover*/
 
 
@@ -913,82 +788,51 @@ input#menu-11:checked + label .menu_part_bottom .menu_part_right {
   display: none;
  } 
  .menu-12 .menu {
-  transition: all 0.14s;
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   cursor: pointer;
  }
  .menu-12 .menu .menu_part {
-  background-color: #000;
   right: 0;
   margin: auto;
   left: 0;
-  border-radius: 0px;
-  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  border-radius: 1px;
   opacity: 1;
  }
 
-/* 간격(gap)은 6px로 고정 */
-.menu-12 .menu_part_top .menu_part_left { /* 첫번째 줄 왼쪽 선 */
+ .menu-12 .menu_part_left,
+ .menu-12 .menu_part_right {
   position: absolute;
   content: "";
-  transition-duration: 0.5s;
+  transition: all 0.1s linear;
   width: 15px;
   height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + -2px);
+ }
+
+/* 간격(gap)은 10px로 고정 */
+.menu-12 .menu_part_top .menu_part_left { /* 첫번째 줄 왼쪽 선 */
+	top: calc(50% - ((5px)) + -5px);
   left: 10px;
 }
 .menu-12 .menu_part .menu_part_left { /* 두번째 줄 왼쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 4px);
+	top: calc(50% - ((5px)) + 5px);
   left: 10px;
 }
 .menu-12 .menu_part_bottom .menu_part_left { /* 세번째 줄 왼쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 10px);
+	top: calc(50% - ((5px)) + 15px);
   left: 10px;
 }
 .menu-12 .menu_part_top .menu_part_right { /* 첫번째 줄 오른쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + -2px);
+	top: calc(50% - ((5px)) + -5px);
   right: 10px;
 }
 .menu-12 .menu_part .menu_part_right { /* 두번째 줄 오른쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 4px);
+	top: calc(50% - ((5px)) + 5px);
   right: 10px;
 }
 .menu-12 .menu_part_bottom .menu_part_right { /* 세번째 줄 오른쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 10px);
+	top: calc(50% - ((5px)) + 15px);
   right: 10px;
 }
 
@@ -996,12 +840,12 @@ input#menu-11:checked + label .menu_part_bottom .menu_part_right {
 /*checked*/
 input#menu-12:checked + label .menu_part_top .menu_part_left {
   width: 18px;
-  top: calc(50% - (6px))!important;
+  top: calc(50% - (6px));
   transform: rotateZ(45deg);
 }
 input#menu-12:checked + label .menu_part_top .menu_part_right {
   width: 18px;
-  top: calc(50% - (6px))!important;
+  top: calc(50% - (6px));
   transform: rotateZ(-45deg);  
 }
 input#menu-12:checked + label .menu_part .menu_part_left {
@@ -1014,12 +858,12 @@ input#menu-12:checked + label .menu_part .menu_part_right {
 }
 input#menu-12:checked + label .menu_part_bottom .menu_part_left {
   width: 18px;
-  top: calc(50% + (6px))!important;
+  top: calc(50% + (6px));
   transform: rotateZ(-45deg);
 }
 input#menu-12:checked + label .menu_part_bottom .menu_part_right {
   width: 18px;
-  top: calc(50% + (6px))!important;
+  top: calc(50% + (6px));
   transform: rotateZ(45deg);
 } /* //checked*/
 
@@ -1034,94 +878,63 @@ input#menu-12:checked + label .menu_part_bottom .menu_part_right {
   display: none;
  } 
  .menu-13 .menu {
-  transition: all 0.14s;
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   cursor: pointer;
  }
  .menu-13 .menu .menu_part {
-  background-color: #000;
   right: 0;
   margin: auto;
   left: 0;
-  border-radius: 0px;
-  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  border-radius: 1px;
   opacity: 1;
  }
 
-/* 간격(gap)은 6px로 고정 */
-.menu-13 .menu_part_top .menu_part_left { /* 첫번째 줄 왼쪽 선 */
+ .menu-13 .menu_part_left,
+ .menu-13 .menu_part_right {
   position: absolute;
   content: "";
-  transition-duration: 0.5s;
+  transition: all 0.1s linear;
   width: 15px;
   height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + -2px);
+ }
+
+/* 간격(gap)은 10px로 고정 */
+.menu-13 .menu_part_top .menu_part_left { /* 첫번째 줄 왼쪽 선 */
+	top: calc(50% - ((5px)) + -5px);
   left: 10px;
 }
 .menu-13 .menu_part .menu_part_left { /* 두번째 줄 왼쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 4px);
+	top: calc(50% - ((5px)) + 5px);
   left: 10px;
 }
 .menu-13 .menu_part_bottom .menu_part_left { /* 세번째 줄 왼쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 10px);
+	top: calc(50% - ((5px)) + 15px);
   left: 10px;
 }
 .menu-13 .menu_part_top .menu_part_right { /* 첫번째 줄 오른쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + -2px);
+	top: calc(50% - ((5px)) + -5px);
   right: 10px;
 }
 .menu-13 .menu_part .menu_part_right { /* 두번째 줄 오른쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 4px);
+	top: calc(50% - ((5px)) + 5px);
   right: 10px;
 }
 .menu-13 .menu_part_bottom .menu_part_right { /* 세번째 줄 오른쪽 선 */
-  position: absolute;
-  content: "";
-  transition-duration: 0.5s;
-  width: 15px;
-  height: 2px;
-  background-color: #000;
-  top: calc(50% - ((2.5px)) + 10px);
+	top: calc(50% - ((5px)) + 15px);
   right: 10px;
 }
 
 /*checked*/
 input#menu-13:checked + label .menu_part_top .menu_part_left {
   width: 18px;
-  top: calc(50% - (6px))!important;
+  top: calc(50% - (6px));
   transform: rotateZ(45deg);
 }
 input#menu-13:checked + label .menu_part_top .menu_part_right {
   width: 18px;
-  top: calc(50% - (6px))!important;
+  top: calc(50% - (6px));
   transform: rotateZ(-45deg);  
 }
 input#menu-13:checked + label .menu_part .menu_part_left {
@@ -1134,20 +947,20 @@ input#menu-13:checked + label .menu_part .menu_part_right {
 }
 input#menu-13:checked + label .menu_part_bottom .menu_part_left {
   width: 18px;
-  top: calc(50% + (6px))!important;
+  top: calc(50% + (6px));
   transform: rotateZ(-45deg);
 }
 input#menu-13:checked + label .menu_part_bottom .menu_part_right {
   width: 18px;
-  top: calc(50% + (6px))!important;
+  top: calc(50% + (6px));
   transform: rotateZ(45deg);
 } /* //checked*/
 
 /*hover*/
-.menu-13 .menu:hover .menu_part_top .menu_part_right{transition:all 0.2s ease; transform: translateY(-2px);} 
-.menu-13 .menu:hover .menu_part_top .menu_part_left{transition:all 0.2s ease; transform: translateY(-2px);}
-.menu-13 .menu:hover .menu_part_bottom .menu_part_left{transition:all 0.2s ease; transform: translateY(2px);} 
-.menu-13 .menu:hover .menu_part_bottom .menu_part_right{transition:all 0.2s ease; transform: translateY(2px);} 
+.menu-13 .menu:hover .menu_part_top .menu_part_right{transition:all 0.1s linear; transform: translateY(-2px);} 
+.menu-13 .menu:hover .menu_part_top .menu_part_left{transition:all 0.1s linear; transform: translateY(-2px);}
+.menu-13 .menu:hover .menu_part_bottom .menu_part_left{transition:all 0.1s linear; transform: translateY(2px);} 
+.menu-13 .menu:hover .menu_part_bottom .menu_part_right{transition:all 0.1s linear; transform: translateY(2px);} 
 /* //hover*/
 
 
@@ -1160,52 +973,48 @@ input#menu-13:checked + label .menu_part_bottom .menu_part_right {
   display: none;
  } 
  .menu-14 .menu {
-  transition: all 0.14s;
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   cursor: pointer;
  }
  .menu-14 .menu .menu_part {
   width: 30px; 
   height: 2px; 
-  position: absolute;  
-  background-color: #000;
+  position: absolute;
   right: 0;
   margin: auto;
   left: 0;
-  border-radius: 0px;
-  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  border-radius: 1px;
+  transition: all 0.1s linear;
 }
 
-/* 간격(gap)은 6px로 고정 */
+/* 간격(gap)은 10px로 고정 */
 .menu-14 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((2.5px)) + -2px);
-	width: 30px
+	top: calc(50% - ((5px)) + -5px);
 }
 .menu-14 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((2.5px)) + 4px);
-	width: 30px
+	top: calc(50% - ((5px)) + 5px);
+  opacity: 1;
 }
 .menu-14 .menu_part:nth-of-type(3) {
-  top: calc(50% - ((2.5px)) + 10px);
-	width: 30px
+	top: calc(50% - ((5px)) + 15px);
 }
 
 /* checked */
 input#menu-14:checked + label .menu {
+  transform:rotate(0deg); 
 }
 input#menu-14:checked + label .menu .menu_part:nth-of-type(1) {
   transform: rotate(135deg);
-  top: calc(50% - (1px))!important;
+  top: calc(50% - (1px));
 }
 input#menu-14:checked + label .menu .menu_part:nth-of-type(2) {
   opacity: 0;
   left: -60px;
 }
 input#menu-14:checked + label .menu .menu_part:nth-of-type(3) {
-  top: calc(50% - (1px))!important;
+  top: calc(50% - (1px));
   transform: rotate(-135deg);
 }
 /* //checked */
@@ -1221,47 +1030,34 @@ input#menu-14:checked + label .menu .menu_part:nth-of-type(3) {
   display: none;
  } 
  .menu-15 .menu {
-  transition: all 0.14s;
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   cursor: pointer;
  }
  .menu-15 .menu .menu_part {
   width: 30px; 
   height: 2px; 
-  position: absolute;  
-  background-color: #000;
+  position: absolute;
   right: 0;
   margin: auto;
   left: 0;
-  border-radius: 0px;
-  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  border-radius: 1px;
+  transition: all 0.1s linear;
 }
-
-/* 간격(gap)은 6px로 고정 */
+/* 간격(gap)은 10px로 고정 */
 .menu-15 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((2.5px)) + -2px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + -5px);
 }
 .menu-15 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((2.5px)) + 4px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + 5px);
 }
 .menu-15 .menu_part:nth-of-type(3) {
-	top: calc(50% - ((2.5px)) + 4px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + 5px);
 }
 .menu-15 .menu_part:nth-of-type(4) {
-  top: calc(50% - ((2.5px)) + 10px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + 15px);
 }
-
 /* checked */
 input#menu-15:checked + label .menu .menu_part:nth-of-type(1) {
   width: 0%;
@@ -1271,7 +1067,6 @@ input#menu-15:checked + label .menu .menu_part:nth-of-type(1) {
 input#menu-15:checked + label .menu .menu_part:nth-of-type(2) {
   transform: rotate(45deg);
 }
-
 input#menu-15:checked + label .menu .menu_part:nth-of-type(3) {
   transform: rotate(-45deg);
 }
@@ -1293,39 +1088,33 @@ input#menu-15:checked + label .menu .menu_part:nth-of-type(4) {
   display: none;
  } 
  .menu-16 .menu {
-  transition: all 0.14s;
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   cursor: pointer;
  }
  .menu-16 .menu .menu_part {
   width: 30px; 
   height: 2px; 
-  position: absolute;  
-  background-color: #000;
+  position: absolute;
   right: 0;
   margin: auto;
   left: 0;
-  border-radius: 0px;
-  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  border-radius: 1px;
+  transition: all 0.1s linear;
 }
 
-/* 간격(gap)은 6px로 고정 */
+/* 간격(gap)은 10px로 고정 */
 .menu-16 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((2.5px)) + -2px);
-	width: 30px;
-  transition: transform 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + -5px);
+  animation : menuPartResetRight 0.48s forwards;
 }
 .menu-16 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((2.5px)) + 4px);
-	width: 30px;
+	top: calc(50% - ((5px)) + 5px);
 }
 .menu-16 .menu_part:nth-of-type(3) {
-  top: calc(50% - ((2.5px)) + 10px);
-	width: 30px;
-  transition: transform 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + 15px);
+  animation : menuPartResetLeft 0.48s forwards;
 }
 
 
@@ -1334,10 +1123,10 @@ input#menu-15:checked + label .menu .menu_part:nth-of-type(4) {
     transform: translateY(0) rotate(0);
   }
   80% {
-    transform: translateY(calc(50% + 6px)) rotate(0);
+    transform: translateY(calc(50% + 10px)) rotate(0);
   }
   100% {
-    transform: translateY(calc(50% + 6px)) rotate(45deg);
+    transform: translateY(calc(50% + 10px)) rotate(45deg);
   }
 }
 
@@ -1346,22 +1135,48 @@ input#menu-15:checked + label .menu .menu_part:nth-of-type(4) {
     transform: translateY(0) rotate(0);
   }
   80% {
-    transform: translateY(calc(50% - 6px)) rotate(0);
+    transform: translateY(calc(50% - 10px)) rotate(0);
   }
   100% {
-    transform: translateY(calc(50% - 6px)) rotate(-45deg);
+    transform: translateY(calc(50% - 10px)) rotate(-45deg);
+  }
+}
+
+@keyframes menuPartResetRight {
+  0% {
+    transform: translateY(calc(50% + 10px)) rotate(45deg);
+  }
+  80% {
+    transform: translateY(calc(50% + 10px)) rotate(0);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes menuPartResetLeft {
+  0% {
+    transform: translateY(calc(50% - 10px)) rotate(-45deg);
+  }
+  80% {
+    transform: translateY(calc(50% - 10px)) rotate(0);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
   }
 }
 
 /* checked */
 input#menu-16:checked + label .menu .menu_part:nth-of-type(1) {
   animation : menuPartRotateRight 0.48s forwards;
+  top: calc(50% + (-10px));
 }
 input#menu-16:checked + label .menu .menu_part:nth-of-type(2) {
   opacity: 0;
 }
 input#menu-16:checked + label .menu .menu_part:nth-of-type(3) {
   animation : menuPartRotateLeft 0.48s forwards;
+  top: calc(50% + (10px));
 }/* //checked */
 
 
@@ -1375,53 +1190,40 @@ input#menu-16:checked + label .menu .menu_part:nth-of-type(3) {
   display: none;
  } 
 .menu-17 .menu {
- transition: all 0.14s;
- position: relative;
- width: 50px;
- height: 50px;
- border-radius: 100%;
- cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 .menu-17 .menu .menu_part {
   width: 30px; 
   height: 2px; 
-  position: absolute;  
-  background-color: #000;
+  position: absolute;
   right: 0;
   margin: auto;
   left: 0;
-  border-radius: 0px;
-  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  border-radius: 1px;
+  transition: all 0.1s linear;
 }
 
-/* 간격(gap)은 6px로 고정 */
+/* 간격(gap)은 10px로 고정 */
 .menu-17 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((2.5px)) + -2px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + -5px);
 }
 .menu-17 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((2.5px)) + 4px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + 5px);
 }
 .menu-17 .menu_part:nth-of-type(3) {
-  top: calc(50% - ((2.5px)) + 10px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + 15px);
 }
 .menu-17 .menu_part:nth-of-type(4) {
-  top: calc(50% - ((2.5px)) + 4px);
-  width: 30px;
+	top: calc(50% - ((5px)) + 5px);
   transform: rotate(90deg);
   opacity: 0;
-  transition: all 0.48s ease-in-out;
 }
 .menu-17 .menu_part:nth-of-type(5) {
-  width: 30px;
-	top: calc(50% - ((2.5px)) + 4px);
+	top: calc(50% - ((5px)) + 5px);
   opacity: 0;
-  transition: all 0.48s ease-in-out;
 }
 
 input#menu-17:checked + label .menu .menu_part:nth-of-type(1) {
@@ -1459,40 +1261,32 @@ input#menu-17:checked + label .menu .menu_part:nth-of-type(5) {
   display: none;
  } 
 .menu-18 .menu {
- transition: all 0.14s;
- position: relative;
- width: 50px;
- height: 50px;
- border-radius: 100%;
- cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 .menu-18 .menu .menu_part {
   width: 30px; 
   height: 2px; 
-  position: absolute;  
-  background-color: #000;
+  position: absolute;
   right: 0;
   margin: auto;
   left: 0;
-  border-radius: 0px;
-  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  border-radius: 1px;
+  transition: all 0.1s linear;
 }
 
-/* 간격(gap)은 6px로 고정 */
+/* 간격(gap)은 10px로 고정 */
 .menu-18 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((2.5px)) + -2px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + -5px);
 }
 .menu-18 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((2.5px)) + 4px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + 5px);
+  opacity: 1;
 }
 .menu-18 .menu_part:nth-of-type(3) {
-  top: calc(50% - ((2.5px)) + 10px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + 15px);
 }
 
 @keyframes rotate45 {
@@ -1503,21 +1297,22 @@ input#menu-17:checked + label .menu .menu_part:nth-of-type(5) {
     transform: translateY(0px) rotate(0);
   }
   100% {
-    transform: translateY(-8px) rotate(90deg);
+    transform: translateY(-10px) rotate(90deg);
   }
 }
 
 input#menu-18:checked + label .menu .menu_part:nth-of-type(1) {
-  transform: translateY(4px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
   
 }
 
 input#menu-18:checked + label .menu .menu_part:nth-of-type(2) {
-  width: 0px;
+  width: 0%;
+  opacity: 0;
 }
 
 input#menu-18:checked + label .menu .menu_part:nth-of-type(3) {
-  transform: translateY(-8px) rotate(135deg);
+  transform: translateY(-10px) rotate(135deg);
 }
 
 
@@ -1531,40 +1326,32 @@ input#menu-18:checked + label .menu .menu_part:nth-of-type(3) {
   display: none;
  } 
 .menu-19 .menu {
- transition: all 0.14s;
- position: relative;
- width: 50px;
- height: 50px;
- border-radius: 100%;
- cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 .menu-19 .menu .menu_part {
   width: 30px; 
   height: 2px; 
-  position: absolute;  
-  background-color: #000;
+  position: absolute;
   right: 0;
   margin: auto;
   left: 0;
-  border-radius: 0px;
-  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  border-radius: 1px;
+  transition: all 0.1s linear;
 }
 
-/* 간격(gap)은 6px로 고정 */
+/* 간격(gap)은 10px로 고정 */
 .menu-19 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((2.5px)) + -2px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + -5px);
 }
 .menu-19 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((2.5px)) + 4px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + 5px);
+  opacity: 1;
 }
 .menu-19 .menu_part:nth-of-type(3) {
-  top: calc(50% - ((2.5px)) + 10px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + 15px);
 }
 
 @keyframes smallbigRight{
@@ -1577,7 +1364,7 @@ input#menu-18:checked + label .menu .menu_part:nth-of-type(3) {
   }
 
   100%{
-    transform: translateY(-8px) rotate(135deg) scale(1);
+    transform: translateY(-10px) rotate(135deg) scale(1);
   }
 }
 
@@ -1591,21 +1378,21 @@ input#menu-18:checked + label .menu .menu_part:nth-of-type(3) {
   }
 
   100%{
-    transform: translateY(4px) rotate(45deg) scale(1);
+    transform: translateY(10px) rotate(45deg) scale(1);
   }
 }
 
 input#menu-19:checked + label .menu .menu_part:nth-of-type(1) {
-  animation: smallbigLeft 0.6s forwards;
+  animation: smallbigLeft 0.9s forwards;
 }
 
 input#menu-19:checked + label .menu .menu_part:nth-of-type(2) {
   width: 0; opacity: 0;
-  transition: 0.6s forwards;
+  transition: 0.9s forwards;
 }
 
 input#menu-19:checked + label .menu .menu_part:nth-of-type(3) {
-  animation: smallbigRight 0.6s forwards;
+  animation: smallbigRight 0.9s forwards;
 }
 
 
@@ -1625,80 +1412,70 @@ input#menu-19:checked + label .menu .menu_part:nth-of-type(3) {
   display: none;
  } 
 .menu-20 .menu {
- transition: all 0.14s;
- position: relative;
- width: 50px;
- height: 50px;
- border-radius: 100%;
- cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 .menu-20 .menu .menu_part {
   width: 30px; 
   height: 2px; 
-  position: absolute;  
-  background-color: #000;
+  position: absolute;
   right: 0;
   margin: auto;
   left: 0;
-  border-radius: 0px;
-  transition: all 0.48s cubic-bezier(0.5, 0, 0.4, 1.9);
+  border-radius: 1px;
+  transition: all 0.1s linear;
 }
 
-/* 간격(gap)은 6px로 고정 */
+/* 간격(gap)은 10px로 고정 */
 .menu-20 .menu_part:nth-of-type(1) {
-	top: calc(50% - ((2.5px)) + -2px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + -5px);
 }
 .menu-20 .menu_part:nth-of-type(2) {
-	top: calc(50% - ((2.5px)) + 4px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + 5px);
 }
 .menu-20 .menu_part:nth-of-type(3) {
-  top: calc(50% - ((2.5px)) + 10px);
-	width: 30px;
-  transition: all 0.48s ease-in-out;
+	top: calc(50% - ((5px)) + 15px);
 }
 .menu-20 .menu_part:nth-of-type(4) {
-  top: calc(50% - ((2.5px)) + 4px);
-  width: 30px;
+	top: 50%;
   transform: rotate(90deg);
   opacity: 0;
-  transition: all 0.48s ease-in-out;
 }
 .menu-20 .menu_part:nth-of-type(5) {
-  width: 30px;
-	top: calc(50% - ((2.5px)) + 4px);
+	top: 50%;
   opacity: 0;
-  transition: all 0.48s ease-in-out;
 }
 
 input#menu-20:checked + label .menu .menu_part:nth-of-type(1) {
   transform: translateY(-100px);
   opacity: 0;
+  transition: all 0.9s linear;
 }
 
 input#menu-20:checked + label .menu .menu_part:nth-of-type(2) {
-  transform: translateY(-100px);
+  /* transform: translateX(-100px); */
   opacity: 0;
+  transition: all 0.1s linear;
 }
 
 input#menu-20:checked + label .menu .menu_part:nth-of-type(3) {
-  transform: translateY(-100px);
+  transform: translateY(100px);
   opacity: 0;
+  transition: all 0.9s linear;
 }
 
 input#menu-20:checked + label .menu .menu_part:nth-of-type(4) {
   opacity: 1;
   transform: rotate(135deg);
-  transition: transform 0.48s 0.5s;
+  transition: all 0.1s linear;
 }
 
 input#menu-20:checked + label .menu .menu_part:nth-of-type(5) {
   opacity: 1;
   transform: rotate(45deg);
-  transition: transform 0.48s 0.5s;
+  transition: all 0.1s linear;
 }
 
 
