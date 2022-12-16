@@ -1107,14 +1107,14 @@ input#menu-15:checked + label .menu .menu_part:nth-of-type(4) {
 /* 간격(gap)은 10px로 고정 */
 .menu-16 .menu_part:nth-of-type(1) {
 	top: calc(50% - ((5px)) + -5px);
-  animation : menuPartResetRight 0.48s forwards;
+  animation : menuPartResetRight 0.2s forwards;
 }
 .menu-16 .menu_part:nth-of-type(2) {
 	top: calc(50% - ((5px)) + 5px);
 }
 .menu-16 .menu_part:nth-of-type(3) {
 	top: calc(50% - ((5px)) + 15px);
-  animation : menuPartResetLeft 0.48s forwards;
+  animation : menuPartResetLeft 0.2s forwards;
 }
 
 
@@ -1168,14 +1168,14 @@ input#menu-15:checked + label .menu .menu_part:nth-of-type(4) {
 
 /* checked */
 input#menu-16:checked + label .menu .menu_part:nth-of-type(1) {
-  animation : menuPartRotateRight 0.48s forwards;
+  animation : menuPartRotateRight 0.2s forwards;
   top: calc(50% + (-10px));
 }
 input#menu-16:checked + label .menu .menu_part:nth-of-type(2) {
   opacity: 0;
 }
 input#menu-16:checked + label .menu .menu_part:nth-of-type(3) {
-  animation : menuPartRotateLeft 0.48s forwards;
+  animation : menuPartRotateLeft 0.2s forwards;
   top: calc(50% + (10px));
 }/* //checked */
 
